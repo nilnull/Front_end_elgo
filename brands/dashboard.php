@@ -94,141 +94,112 @@
 	
 		<div class="card-container">
 			<span class="bold">Campaign:</span>
-			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active">Create</a>
-			<a href="#" class="inline createCampaign-top-menu">Dashboard</a>
+			<a href="#" class="inline createCampaign-top-menu">Create</a>
+			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active">Dashboard</a>
 		</div>
 		
 		
 		
-		<div class="row">
-		
-			<div class="col col30">
-			
-				<nav class="createCampaign-left-menu">
-					
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link createCampaign-left-menu__item-link--active">
-							<h5 class="h6 bold">1. Get Started!</h5>
-						</a>
-						<div class="createCampaign-left-menu__item-desc">
-							<span class="block h7">Pick your choice of user endorsement.</span>
-						</div>
-					</div>
-					
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link">
-							<h5 class="h6 bold">2. Edit Campaign</h5>
-						</a>
-						<div class="createCampaign-left-menu__item-desc">
-							<span class="block h7">Create a post to be shared by users on their social platforms.</span>
-						</div>
-					</div>
-						
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link">
-							<h5 class="h6 bold">3. Invite Users</h5>
-						</a>
-					</div>
-					
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link">
-							<h5 class="h6 bold">4. Publish Campaign</h5>
-						</a>
-					</div>
-					
-				</nav>
+		<div class="row dashboard">
+            <div class="card-container row">
+                    <div class="col col2 h6">
+                            Dashboard/Be A LEGO Creator <span class="bold">/Users</span>
+                    </div >
+                
+                    <div class=" h7 float-right">
+                        Type: <span class="bold">SHARE</span>&nbsp;
+                        <a href="#" >Edit</a>&nbsp;
+                        <a href="#" >Preview</a>&nbsp;
+                        <a href="#" >Invite More</a>&nbsp;
+                    </div >
+            </div>
+            <div class="card-container row h8">
+                    <div class="col col5 ">
+                         <span class="bold">Sort by:</span> Invited applied
+                    </div >
+                    <div class="col col5 ">
+                             <span class="bold">Status:</span> Accepted Declined Pending
+                    </div >
+                    <div class="col col5 ">
+                             <span class="bold">Posted:</span> All Facebook Twitter
+                    </div >
+                    <div class="col col5 ">
+                             <span class="bold">Reach:</span> Top Engagment
+                    </div >
+                    <div class="col col5 ">
+                             
+                    </div >
+            </div>
+            <div class="row card-container ">
+                <table class="dashboard-table h7" style="width:100%"  cellpadding="30">
+
+                        <tr class="MainTitle">
+                            <th colspan="5">
+                                Be A LEGO CREATOR
+                            </th>
+                            <th colspan="4">
+                                Posted
+                            </th>
+                        </tr>
+                        <tr>
+                            <th >Individual</th>
+                            <th >Group Name</th>
+                            <th >State</th>
+                            <th >Action</th>
+                            <th >Status</th>
+                            <th class="h5"><span class="social-circle fa fa-facebook"></span></th>
+                            <th class="h5"><span class="social-circle fa fa-twitter"></span></th>
+                            <th class="h5"><span class="social-circle fa fa-google-plus"></span></th>
+                            <th class="h5"><span class="social-circle fa fa-linkedin"></span></th>
+                        </tr>
+                    <tbody>
+                        <?php $i=0;
+                        while($i<3){
+                        ?>
+                        <tr>
+                            <td>test</td>
+                            <td>Group random Name</td>
+                            <td class="green">Applied</td>
+                            <td>test</td>
+                            <td ><span class="task-done fa fa-check"></span></td>
+                            <td ><span class="task-done fa fa-check "></span></td>
+                            <td ><span class="task-not-done fa fa-remove"></span></td>
+                            <td></td>
+                            <td ><div><span class="task-not-done fa fa-remove"></span></div></td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>Group random Name</td>
+                            <td class="green">test</td>
+                            <td>test</td>
+                            <td ><span class="task-not-done fa fa-remove"></span></td>
+                            <td ><span class="task-not-done fa fa-remove"></span></td>
+                            <td ><span class="task-done fa fa-check "></span></td>
+                            <td></td>
+                            <td ><div><span class="task-done fa fa-check "></span></div></td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>Group random Name</td>
+                            <td class="green">Invited</td>
+                            <td>test</td>
+                            <td ><span class="gray-font fa fa-remove"></span><span class="gray-font fa fa-check"></span></td>
+                            <td ><span class="task-not-done fa fa-remove"></span></td>
+                            <td ><div><span class="task-done fa fa-check "></span></div></td>
+                            <td></td>
+                            <td ><span class="task-done fa fa-check "></span></td>
+                        </tr>
+                        <?php $i++;}?>
+                    </tbody>
+                </table>		
 			</div>
-			
-				
-			
-			<div class="col col70">
-			
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">
-							<img src="../img/brands/create/share.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Posts</p>
-							<p class="h7">Users share a pre-created post, along with image.</p>
-							<p class="h7">Platforms: 
-								<i class="fa fa-facebook social-circle"></i>
-								<i class="fa fa-google-plus social-circle"></i>
-								<i class="fa fa-twitter social-circle"></i>
-							</p>
-						</div>
-					</div>
-				</div>
-				
-			
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">
-							<img src="../img/brands/create/hashtag.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Hashtags</p>
-							<p class="h7">Users incorporate your hashtags in their posts.</p>
-							<p class="h7">Platforms: 
-								<i class="fa fa-twitter social-circle"></i>
-								<i class="fa fa-instagram social-circle"></i>
-							</p>
-						</div>
-					</div>
-				</div>
-			
-			
-			
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">						
-							<img src="../img/brands/create/clicks.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Clicks</p>
-							<p class="h7">Users click on your link, creating more impressions.</p>
-							<p class="h7">Platforms: 
-								<i class="fa fa-facebook social-circle"></i>
-								<i class="fa fa-twitter social-circle"></i>
-								<i class="fa fa-instagram social-circle"></i>
-							</p>							
-						</div>
-					</div>
-				</div>
-				
-				
-				
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">
-							
-							<img src="../img/brands/create/survey.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Clicks</p>
-							<p class="h7">Users take a survey, and data is gathered.</p>
-						</div>
-					</div>
-				</div>
-				
-				
-				
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row /createCampaign__card--inactive">
-							
-							<img src="../img/brands/create/check-in.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Check-in</p>
-							<p class="h7">Users mark or 'check-in' their locations based on your link.</p>
-							
-							<div class="hide abs top left createCampaign__card-soon text-center" style="background-color:#7242c3">
-								<div class="table">
-									<div class="table-cell">
-										<span class="h4">Coming Soon</h3>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-				
-				
-			</div>			
-			
+            <div class="row ">
+                <div class=" h7 float-right dashboard-pagination">
+                    <div class="col "><span class="bold inline"> <a href="#" class="">Prev</a> </span>&nbsp; Page </div>
+                    <div class="col col8"><input type="text" class="field" value="8"/></div>
+                    <div class="col ">&nbsp;/80<span class="bold"> <a href="#" class="">Next </a></span></div>
+                </div >
+            </div>
 			
 		</div>
 		
