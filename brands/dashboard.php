@@ -131,7 +131,7 @@
                     </div >
             </div>
             <div class="row card-container ">
-                <table class="dashboard-table h7" style="width:100%"  cellpadding="30">
+                <table class="dashboard-table h7 table-responsive" style="width:100%"  cellpadding="30">
 
                         <tr class="MainTitle">
                             <th colspan="5">
