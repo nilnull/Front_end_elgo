@@ -226,7 +226,26 @@ $(document).ready(function(){
 					
 		}
 
-	})
+	});
+    
+    $(".tabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+	 $(".subtabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("top-submenu--active");
+        
+        $(this).parent().siblings().removeClass("top-submenu--active");
+        var tab = $(this).attr("href");
+        $(".subtab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
 });
 
 

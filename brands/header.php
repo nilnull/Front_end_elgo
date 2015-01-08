@@ -13,6 +13,15 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css?v=1.0" media="all" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../js/jquery.easing.1.3.min.js"></script>
+	<script src="../js/placeholders.js"></script>
+	<script src="../js/jquery.fancybox.js"></script>
+    <script src="../js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.blockui.js"></script>
+    <script src="../js/main.js"></script>
+
 	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<style>
 	.card-container--s{min-height:136px}
