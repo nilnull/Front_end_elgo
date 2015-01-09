@@ -10,7 +10,7 @@ $(document).ready(function(){
 	function update_text(a, b){
 		$(a).text(b);
 	}
-//test
+//test1
 	$(".js-next").click(function(){
 		if(animating) return false;
 		animating = true;
