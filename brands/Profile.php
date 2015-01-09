@@ -5,8 +5,8 @@
 	<section id="tabs-1" class="wrap mainBody-container">
 	
 		<div class="card-container ">
-                <span class="bold">Profile :</span>
-            <ul class="subtabs-menu">
+                <span class="bold profile_submenu">Profile :</span>
+            <ul class="subtabs-menu profile_submenu">
                 <li class="inline top-submenu--active"><a href="#brandProfile_About" class="inline top-submenu ">About</a></li>
                 <li class="inline"><a href="#brandProfile_edit" class="inline top-submenu">Edit</a></li>
             </ul>
@@ -60,7 +60,29 @@
 				</div>
 				<div class="card card-container">
 					<p class="bold">Latest Campaign</p>
-					
+                    <div class="row latest_campaign_slider">
+                        <div class="col center browse-latest-campaign__cursors">
+                            <span class="float-left h5 fa fa-chevron-left " ></span>
+                        </div>
+                        <div class="col col1-25">
+                            <div class="campaign-card">
+                                <div class="row Campaign-card-title">
+                                    <span class="h6 rel left">#CampaignHashtag </span>
+                                    <span class="float-right h7 fa fa-chevron-right Campaign-card-more-cursore" ></span>
+                                </div>
+                                <div class="">
+                                    <img src="../img/individual/sample_cover_photo.jpg" class="Campaign-card-cover">
+                                </div>
+                                <div class="row">
+                                    <div class="float-right  inline"><input class="btn small btn-bottom btn__bg-color--red no-transition right Campaign-card-action" type="submit" value="APPLY"></div>
+                                    <div class="float-right Campaign-card-type inline"><span class="Bold h6 black">HASHTAG</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col center browse-latest-campaign__cursors">
+                            <span class="float-right h5 fa fa-chevron-right  " ></span>
+                        </div>
+                    </div>
 				</div>
 				<div class="card card-container card-bgColor--white">
 					<span class="light">No recent activity</span>
