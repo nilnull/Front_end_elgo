@@ -45,7 +45,7 @@ $(document).ready(function(){
 			easing: 'easeInOutBack'
 		});
 	});
-
+//test
 	$(".js-previous").click(function(){
 		if(animating) return false;
 		animating = true;
