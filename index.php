@@ -27,7 +27,7 @@
 				<div class="header-container row">
 					<a href="./"><img src="img/logo.png" alt="eligo logo float-left"></a>
 					<div class="float-right">
-						<a href="#js-register--brand" class="inline btn btn__header btn__header__item btn__bg-color--red js-popup">JOIN AS BRAND</a>
+						<a href="#js-register--brand" class="inline btn btn__header btn__header__item btn__bg-color--red js-popup">JOIN AS A BRAND</a>
 						<a href="#js-register--individual" class="inline btn btn__header btn__header__item btn__bg-color--blue js-popup">JOIN AS INDIVIDUAL</a>
 						<a href="#js-login" class="inline btn btn__header btn__header__item btn__bg-color--black btn--white-border js-popup">SIGN IN</a>
 						<a href="#" class="btn__header__item"><i class="fa fa-bars v-middle text-color--white"></i></a>
