@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="author" content="Pi">
-	<title>eligo.me</title>
+	<title>Create Campaign - Step 1</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
