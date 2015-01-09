@@ -106,8 +106,8 @@
 			
 				<nav class="createCampaign-left-menu">
 					
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link createCampaign-left-menu__item-link--active">
+					<div class="createCampaign-left-menu__item js-menu__item">
+						<a href="#step1" class="createCampaign-left-menu__item-link createCampaign-left-menu__item-link--active">
 							<h5 class="h6 bold">1. Get Started!</h5>
 						</a>
 						<div class="createCampaign-left-menu__item-desc">
@@ -115,8 +115,8 @@
 						</div>
 					</div>
 					
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link">
+					<div class="createCampaign-left-menu__item js-menu__item">
+						<a href="#step2" class="createCampaign-left-menu__item-link">
 							<h5 class="h6 bold">2. Edit Campaign</h5>
 						</a>
 						<div class="createCampaign-left-menu__item-desc">
@@ -124,14 +124,14 @@
 						</div>
 					</div>
 						
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link">
+					<div class="createCampaign-left-menu__item js-menu__item">
+						<a href="#step3" class="createCampaign-left-menu__item-link">
 							<h5 class="h6 bold">3. Invite Users</h5>
 						</a>
 					</div>
 					
-					<div class="createCampaign-left-menu__item">
-						<a href="#" class="createCampaign-left-menu__item-link">
+					<div class="createCampaign-left-menu__item js-menu__item">
+						<a href="#step4" class="createCampaign-left-menu__item-link">
 							<h5 class="h6 bold">4. Publish Campaign</h5>
 						</a>
 					</div>
@@ -143,88 +143,218 @@
 			
 			<div class="col col70">
 			
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">
-							<img src="../img/brands/create/share.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Posts</p>
-							<p class="h7">Users share a pre-created post, along with image.</p>
-							<p class="h7">Platforms: 
-								<i class="fa fa-facebook social-circle"></i>
-								<i class="fa fa-google-plus social-circle"></i>
-								<i class="fa fa-twitter social-circle"></i>
-							</p>
+				<!--Step 1-->
+				<div class="hide js-step" id="step1">
+				
+					<div class="col col2">
+						<div class="card card-bgColor--white">
+							<div class="rel card-container--s row">
+								<img src="../img/brands/create/share.png" class="float-left createCampaign__card-img">
+								<p class="bold no-margin">Posts</p>
+								<p class="h7">Users share a pre-created post, along with image.</p>
+								<p class="h7">Platforms: 
+									<i class="fa fa-facebook social-circle"></i>
+									<i class="fa fa-google-plus social-circle"></i>
+									<i class="fa fa-twitter social-circle"></i>
+								</p>
+							</div>
 						</div>
+					</div>
+					
+				
+					<div class="col col2">
+						<div class="card card-bgColor--white">
+							<div class="rel card-container--s row">
+								<img src="../img/brands/create/hashtag.png" class="float-left createCampaign__card-img">
+								<p class="bold no-margin">Hashtags</p>
+								<p class="h7">Users incorporate your hashtags in their posts.</p>
+								<p class="h7">Platforms: 
+									<i class="fa fa-twitter social-circle"></i>
+									<i class="fa fa-instagram social-circle"></i>
+								</p>
+							</div>
+						</div>
+					</div>
+				
+				
+				
+					<div class="col col2">
+						<div class="card card-bgColor--white">
+							<div class="rel card-container--s row">						
+								<img src="../img/brands/create/clicks.png" class="float-left createCampaign__card-img">
+								<p class="bold no-margin">Clicks</p>
+								<p class="h7">Users click on your link, creating more impressions.</p>
+								<p class="h7">Platforms: 
+									<i class="fa fa-facebook social-circle"></i>
+									<i class="fa fa-twitter social-circle"></i>
+									<i class="fa fa-instagram social-circle"></i>
+								</p>							
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="col col2">
+						<div class="card card-bgColor--white">
+							<div class="rel card-container--s row">
+								
+								<img src="../img/brands/create/survey.png" class="float-left createCampaign__card-img">
+								<p class="bold no-margin">Clicks</p>
+								<p class="h7">Users take a survey, and data is gathered.</p>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="col col2">
+						<div class="card card-bgColor--white">
+							<div class="rel card-container--s row /createCampaign__card--inactive">
+								
+								<img src="../img/brands/create/check-in.png" class="float-left createCampaign__card-img">
+								<p class="bold no-margin">Check-in</p>
+								<p class="h7">Users mark or 'check-in' their locations based on your link.</p>
+								
+								<div class="hide abs top left createCampaign__card-soon text-center" style="background-color:#7242c3">
+									<div class="table">
+										<div class="table-cell">
+											<span class="h4">Coming Soon</h3>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				
+				</div>
+
+				<!--Step 3-->
+				<div class="js-step" id="step3">
+					<div class="createCampaign-title">Choose the Group to Start Invite Users</div>
+					<div class="row createCampaign-card text-center">
+						<div class="float-left">
+							<div class="group-circle bg-color--orange light">
+								<div class="group-circle__item">
+									<span class="block h4">1,300</span>users
+								</div>
+							</div>
+							<span class="group-circle__tile">Pro Social Media</span>
+						</div>
+						
+						<div class="float-left">
+							<div class="group-circle bg-color--red light">
+								<div class="group-circle__item">
+									<span class="block h4">5</span>users
+								</div>
+							</div>
+							<span class="group-circle__tile">Malaysia</span>
+						</div>
+						
+						<div class="float-left">
+							<div class="group-circle bg-color--slateblue light">
+								<div class="group-circle__item">
+									<span class="block h4">49</span>users
+								</div>
+							</div>
+							<span class="group-circle__tile">Female</span>
+						</div>
+						
+						<div class="float-left">						
+							<div class="group-circle bg-color--pinegreen light">
+								<div class="group-circle__item">
+									<span class="block h4">22</span>users
+								</div>
+							</div>
+							<span class="group-circle__tile">Male</span>
+						</div>
+						
+						<div class="float-left">
+							<div class="group-circle bg-color--bondieblue light">
+								<div class="group-circle__item">
+									<span class="block h4">541</span>users
+								</div>
+							</div>
+							<span class="group-circle__tile">Creative</span>
+						</div>
+						
+						<div class="float-left">
+							<a href="#" class="group-circle bg-color--atomic light">
+								<div class="group-circle__item">
+									<i class="block h1 fa fa-plus"></i>
+								</div>
+							</a>
+							<span class="group-circle__tile">New Group</span>
+						</div>
+						
 					</div>
 				</div>
 				
-			
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">
-							<img src="../img/brands/create/hashtag.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Hashtags</p>
-							<p class="h7">Users incorporate your hashtags in their posts.</p>
-							<p class="h7">Platforms: 
-								<i class="fa fa-twitter social-circle"></i>
-								<i class="fa fa-instagram social-circle"></i>
-							</p>
+				<!--Step 4-->
+				<div class="hide js-step" id="step4">
+					
+					<div class="createCampaign-title">Your Campaign is Ready to be Published</div>
+					<div class="createCampaign-card">
+						<p class="h6">Summary</p>
+						<div class="row">
+							<div class="col col2">
+								<table class="table-responsive no-border">
+									<thead>
+										<tr>
+											<td>Maximum number of users you can invite is</td>
+											<td>950/2,000</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Total Budget</td>
+											<td>1,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
-					</div>
-				</div>
-			
-			
-			
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">						
-							<img src="../img/brands/create/clicks.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Clicks</p>
-							<p class="h7">Users click on your link, creating more impressions.</p>
-							<p class="h7">Platforms: 
-								<i class="fa fa-facebook social-circle"></i>
-								<i class="fa fa-twitter social-circle"></i>
-								<i class="fa fa-instagram social-circle"></i>
-							</p>							
-						</div>
-					</div>
-				</div>
-				
-				
-				
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row">
-							
-							<img src="../img/brands/create/survey.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Clicks</p>
-							<p class="h7">Users take a survey, and data is gathered.</p>
-						</div>
-					</div>
-				</div>
-				
-				
-				
-				<div class="col col2">
-					<div class="card card-bgColor--white">
-						<div class="rel card-container--s row /createCampaign__card--inactive">
-							
-							<img src="../img/brands/create/check-in.png" class="float-left createCampaign__card-img">
-							<p class="bold no-margin">Check-in</p>
-							<p class="h7">Users mark or 'check-in' their locations based on your link.</p>
-							
-							<div class="hide abs top left createCampaign__card-soon text-center" style="background-color:#7242c3">
-								<div class="table">
-									<div class="table-cell">
-										<span class="h4">Coming Soon</h3>
+						
+						<div class="row">
+							<div class="col col2">
+								<table class="table-responsive createCampaign-table">
+									<thead>
+										<tr>
+											<td>Group name</td>
+											<td>Number</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Pro Social Media</td>
+											<td>
+												950
+												<span class="float-right">
+													<a href="#"><i class="fa fa-pencil"></i></a>
+													<a href="#"><i class="fa fa-close"></i></a>
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col col2 text-right">
+								<div class="row">
+									<label>Respond before</label>
+									<input value="10 Nov 2014">
+								</div>
+								<div class="row">
+									<div class="float-right">
+										<a href="#" class="underline text-color--red" style="margin-right:10px">Reset </a>
+										<input class="btn small btn__bg-color--red" type="submit" value="PUBLISH">
 									</div>
 								</div>
 							</div>
-							
 						</div>
 					</div>
-				</div>
-				
+					
+				</div>				
 				
 				
 			</div>			
@@ -253,7 +383,15 @@
 	<script src="../js/jquery.fancybox.js"></script>
 	<script src="../js/main.js"></script>
 	<script>
-	
+		$(document).ready(function(){
+			$('.js-menu__item a').click(function(){
+				var href = $(this).attr('href');
+				$('.js-step' + href).show().siblings().hide();
+				$(this).addClass('createCampaign-left-menu__item-link--active').parents().siblings().children('a').removeClass('createCampaign-left-menu__item-link--active');
+				return false;
+			});
+		});
+		
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

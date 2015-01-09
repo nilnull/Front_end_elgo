@@ -69,7 +69,7 @@
 html, body{height:100%}
 body{font-family:Lato, Arial;font-size:13px;font-weight:400;color:#2a2a2a}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}
-a,area,img,fieldset,input{text-decoration:none;outline:0;border:0}
+a,area,img,fieldset,input[type="submit"]{text-decoration:none;outline:0;border:0}
 p,ul,ol{margin-bottom:10px}
 ul,ol{padding-left:25px}
 img{vertical-align: middle}
@@ -182,6 +182,7 @@ html[xmlns] .clearfix{display: block}
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	border: 1px solid #ddd;
 }
+.table-responsive.no-border {border:0}
 .wrap{
 	margin-left:auto;
 	margin-right:auto;
@@ -250,9 +251,10 @@ html[xmlns] .clearfix{display: block}
 .bg-color--orange{background-color:#ffa200}
 .bg-color--slateblue{background-color:#7242c3}
 .bg-color--pinegreen{background-color:#018165}
-.bg-color--bondieblue{background-color:#018165}
+.bg-color--bondieblue{background-color:#00a0b1}
 .bg-color--grey--light{background-color:#f3f3f3}
 .bg-color--grey--dark{background-color:#242424}
+.bg-color--atomic{background-color:#3f4e54}
 
 
 
@@ -1304,6 +1306,50 @@ a.createCampaign-left-menu__item-link:hover,
 .createCampaign-left-menu__item-link ~ .createCampaign-left-menu__item-desc{display:none;}
 .createCampaign-left-menu__item-link--active ~ .createCampaign-left-menu__item-desc{display:block;}
 
+.createCampaign-title{
+	padding:10px;
+	font-size:18px;
+	color:#fff;
+	background-color:#3f4e54;
+}
+.createCampaign-card{
+	padding:10px;
+	background-color:#fff;
+}
+.createCampaign-card,
+.createCampaign-table .fa{
+	color:#3f4e54;
+}
+.createCampaign-table{
+	border-spacing: 2px;
+	border: 0;
+}
+.createCampaign-table thead{
+	color:#fff;
+	background-color:#3f4e54;
+}
+.createCampaign-table tbody{
+	background-color:#e5e5e5;
+}
+
+
+.group-circle{
+	display:block;
+	margin-right:15px;
+	margin-bottom:10px;
+	width:115px;
+	height:115px;
+	color:#fff;
+	border-radius:50%;
+}
+.group-circle__item{
+	position:relative;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+.group-circle__tile{margin-left:-15px}
 
 
 .groupToInvite__group-item{
@@ -1356,7 +1402,7 @@ a.createCampaign-left-menu__item-link:hover,
     text-align: left;
 }
 
-.dashboard-table tr th,td{
+.dashboard-table tr th{
     border-left: 1px solid #c5c5c5;
     border-bottom: 1px solid #c5c5c5;
     border-collapse: collapse;
