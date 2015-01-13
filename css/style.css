@@ -256,6 +256,7 @@ html[xmlns] .clearfix{display: block}
 .bg-color--grey--light{background-color:#f3f3f3}
 .bg-color--grey--dark{background-color:#242424}
 .bg-color--atomic{background-color:#3f4e54}
+.bg-color--body{background-color:#3f4e54}
 
 
 
@@ -321,7 +322,7 @@ html[xmlns] .clearfix{display: block}
 .btn.small {
 	padding:8px;
 	margin-top:15px;
-	width:auto;
+    width:auto;
 }
 .btn.no-transition {
 	-moz-transition: none;
@@ -450,6 +451,10 @@ html[xmlns] .clearfix{display: block}
 	height:400px;
 	font-size:18px;
 	font-weight:300
+}
+.small-percentage_info .info_btm{
+    height:45px;
+    margin-bottom: 2px;
 }
 .info__item{height:100%;}
 .info__thumb{height: 100%;}
@@ -1286,7 +1291,8 @@ html[xmlns] .clearfix{display: block}
 	margin-right: 30px;
 }
 .createCampaign-left-menu__item-desc,
-.createCampaign-left-menu__item-link{
+.createCampaign-left-menu__item-link,
+.side-left-menu__item-link{
 	display:block;
 	padding-top:18px;
 	padding-bottom:18px;
@@ -1302,7 +1308,10 @@ html[xmlns] .clearfix{display: block}
 	min-height:60px;
 }
 a.createCampaign-left-menu__item-link:hover,
-.createCampaign-left-menu__item-link--active{
+.createCampaign-left-menu__item-link--active,
+.side-left-menu__item-link.active,
+a.side-left-menu__item-link:hover
+{
 	color:#fff;
 	background-color:#f93349;
 }
@@ -2036,10 +2045,6 @@ margin-top:15%;
 }
 
 
-.select_element
-
-
-
 .select_element {
     background-color: #FFF;
 }
@@ -2106,9 +2111,12 @@ margin-top:15%;
 
 .percentage_bar {
     margin-top: 13px;
+    margin-bottom: 5px;
     width: 100%;
     height: 16px;
-    background-color: #e5e5e5;
+}
+.percentage_bar.small{
+    height: 5px;
 }
 
 .percentage_bar-complete {
@@ -2125,4 +2133,102 @@ margin-top:15%;
     background-color: #e5e5e5;
     
     
+}
+
+.Custom_table {
+    margin: 0px 10px 0px 10px;
+    background-color: white;
+}
+
+.border_transparent {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+}
+
+.table_row:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+.table_row{
+    height:50px;
+}
+.table_header{
+    height:30px;
+}
+
+.table_td {
+    height: 100%;
+    padding: 10px 2px 3px 10px;
+}
+
+
+.user-avatar--header-smaller {
+	margin-left:5px;
+	margin-right:5px;
+	width:30px;
+	height:30px;
+}
+
+.small_square {
+    width: 12px;
+    height: 12px;
+    padding: auto;
+}
+
+.small-percentage_info {
+    height: 50px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.space-left-inner {
+    padding-left: 10px;
+}
+.space-left-outer {
+    margin-left: 5px;
+}
+
+.space-vertical-outer {
+    margin-up:3px;
+    margin-bottom: 3px;
+}
+
+.side-left-menu__item-link.thinner {
+ padding-bottom: 12px;
+ padding-top: 12px;
+}
+
+.campaign_type {
+    padding-bottom: 0px;
+    padding-top: 60px;
+    padding-right: 10px;
+}
+
+.GroupInfo {
+    margin-top: 15px;
+    border-bottom: 1px solid #eeeeee;
+    width: 70%;
+}
+
+.groupinfo_item {
+    margin-top:6px;
+    margin-bottom:6px;
+}
+.groupinfo_item .bulletpoint{
+    margin-right: 8px;
+}
+
+.left-menu {
+    margin-right: 10px;
+}
+
+.GroupInfo .title {
+    margin-bottom: 10px;
+}
+
+.custom_txt_input {
+    width: 24px;
+}
+
+.pagination {
+margin-top: 15px;    
 }
