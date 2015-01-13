@@ -169,6 +169,7 @@ html[xmlns] .clearfix{display: block}
 .col70{width:70%}
 .col80{width:80%}
 .col90{width:90%}
+.col0-5{width:5%}
 .img-responsive {
 	display: block;
 	max-width: 100%;
@@ -492,7 +493,7 @@ html[xmlns] .clearfix{display: block}
 	color:#343434;
 	background-color:#f2f2f2;
 }
-.card-container{padding:20px;}
+.card-container{margin-top:6px; padding-left: 30px;}
 .card-container--s{padding:10px;}
 .card-bgColor--white{background-color:#fff;}
 .card-bgColor--blue{background-color:#1792e9;}
@@ -1231,11 +1232,13 @@ html[xmlns] .clearfix{display: block}
 
 
 .createCampaign-top-menu, .top-submenu{
-	padding:10px 15px;
+	padding:16px 15px;
 	margin-left:5px;
 	margin-right:5px;
 	color:#000;	
+    height: 100%;
 }
+
 
 .createCampain__greyCircle{
 	display:block;
@@ -1926,4 +1929,200 @@ margin-top:15%;
 
 .latest_campaign_slider {
     margin-left: 5%;
+}
+
+.campaign_card_withAnalysis {
+    background-color: white;
+    height:352px;
+    margin-left: 14px;
+    margin-right: 10px;
+    margin-bottom: 14px;
+    margin-top: 10px;
+    color: #343434;
+}
+
+.campaign_card_withAnalysis_topbar {
+    height: 15.5%;
+    background-color: white;
+    padding-top: 3.4%;
+}
+.campaign_card_withAnalysis_topbar p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.campaign_card_withAnalysis_bottom {
+    height: 29%;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #232323;
+}
+
+.campaign_card_withAnalysis_cover {
+    height: 56.3%;
+    overflow: hidden;
+    background-color: orange;
+}
+
+.campaign_card_withAnalysis_bottom__info{
+    text-align: center;
+    padding-top: 20px;
+    height: 100%;
+    border-right: 1px solid #CDCDCD;
+    
+}
+.dashboard_campaign_analysisInfo-stats_topbar__info p{
+    p
+}
+
+.campaign_card_withAnalysis_cover_img {
+    height: 100%;
+    margin-left:  -40%;
+    position: sticky;
+}
+
+.noborder {
+    border: 0px;
+}
+
+.campaign_card_withAnalysis_bottom__info p,
+.dashboard_campaign_analysisInfo-stats_topbar__info p{
+    margin-bottom: 1px
+}
+
+.sub_path {
+    padding-top: 11px;
+    margin-bottom: 6px;
+}
+
+.dashboard_campaign_analysisInfo-stats {
+    background-color: white;
+    height: 394px;
+    color: #343434;
+    border: 1px solid #BCBCBC;
+}
+
+.dashboard_campaign_analysisInfo-stats_topbar {
+    height:17.2%;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.dashboard_campaign_analysisInfo-stats_topbar-nums {
+    border: 1px solid #BCBCBC;
+}
+
+.dashboard_campaign_analysisInfo-stats_topbar__info {
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    height: 100%;
+    border-right: 1px solid #CDCDCD;
+    border-collapse: collapse;
+}
+.dashboard_campaign_analysisInfo-stats_topbar__info.active{
+    background-color: #343434;
+    color: white;
+}
+
+.dashboard_campaign_analysisInfo-stats_topbar-charttype {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: gray;
+    width: 21%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+
+.select_element
+
+
+
+.select_element {
+    background-color: #FFF;
+}
+
+.dashboard_campaign_analysisInfo-stats_chart {
+    height: 83%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dashboard_campaign_analysisInfo-stats_chart div{
+    height: 100%;
+    width: 100%;   
+}
+
+.dashboard_campaign_analysisInfo-stats_chart-graph {
+    
+}
+
+.dashboard_campaign_analysisInfo-summerytbl {
+    background-color: white;
+    height: 262px;
+    margin-top: 10px;
+}
+.dashboard_campaign_analysisInfo-summerytbl .col{
+    
+}
+
+
+.dashboard_campaign_analysisInfo-summerytbl-thead {
+    background-color: #343434;
+    color: white;
+    height:30px;
+}
+.dashboard_campaign_analysisInfo-summerytbl-thead .col{
+     
+}
+
+.dashboard_campaign_analysisInfo-summerytbl-thead .thead_td {
+    height: 100%;   
+    border-right: 1px solid #e5e5e5;
+    padding: 5px 10px 5px 20px;
+}
+.thead_td{
+    height: 100%;   
+}
+
+.dashboard_campaign_analysisInfo-summerytbl-tbody {
+    height: 89%;
+}
+
+.dashboard_campaign_analysisInfo-summerytbl-tbody .tbody_tr {
+    height:100%;
+    padding: 0px;
+}
+.dashboard_campaign_analysisInfo-summerytbl-tbody .tbody_tr .tbody_tr_td{
+  height: 100%;   
+  border-right: 1px solid #e5e5e5;   
+  padding: 5px 10px 5px 20px;
+}
+
+.dashboard_campaign_analysisInfo-summerytbl-tbody .tbody_tr .tbody_tr_td .row{
+    margin-top: 15px;
+}
+
+.percentage_bar {
+    margin-top: 13px;
+    width: 100%;
+    height: 16px;
+    background-color: #e5e5e5;
+}
+
+.percentage_bar-complete {
+    height:100%;
+    width: 60%;
+}
+
+.info-bubble {
+    margin-left: 8px;
+    height:46px;
+    overflow: hidden;
+    padding: 6px;
+    border: 1px solid #d5d5d5;
+    background-color: #e5e5e5;
+    
+    
 }

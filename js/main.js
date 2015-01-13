@@ -246,6 +246,12 @@ $(document).ready(function(){
         $(".subtab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
+   
+   //percentage bar tehcnique  example in brands/dashboard.php
+   $( ".percentage_num" ).each(function( index ) {
+       percent_str=$(this).text();
+       $($(this).parent().find('.percentage_bar-complete')).css('width',percent_str);
+   });
 });
 
 
