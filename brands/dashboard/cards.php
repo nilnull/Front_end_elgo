@@ -4,7 +4,8 @@
                    
                    <div class="col col2">
                        <!-- ###start: Campaign Card with some analysis info -->
-                        <div class="campaign_card_withAnalysis">
+                        <div class="campaign_card_withAnalysis" data-campid="id_here">
+                            <a href="#" class="Card">
                             <div class="  campaign_card_withAnalysis_topbar h6 ">
                                 <p class="rel center inline">
                                     Campaign Name
@@ -34,13 +35,15 @@
                                     <p class="h7">Cost per Share</p>
                                 </div>
                             </div>
+                        </a>        
                         </div>
                        <!-- ###end: Campaign Card with some analysis info -->
                        
                    </div>
                    <div class="col col2">
                        <!-- ###start: Campaign Card with some analysis info -->
-                        <div class="campaign_card_withAnalysis">
+                        <div class="campaign_card_withAnalysis" data-campid="id_here">
+                            <a href="#" class="Card">
                             <div class="  campaign_card_withAnalysis_topbar h6 ">
                                 <p class="rel center inline">
                                     Campaign Name
@@ -70,13 +73,15 @@
                                     <p class="h7">Cost per Share</p>
                                 </div>
                             </div>
+                        </a>        
                         </div>
                        <!-- ###end: Campaign Card with some analysis info -->
                        
                    </div>
                    <div class="col col2">
                        <!-- ###start: Campaign Card with some analysis info -->
-                        <div class="campaign_card_withAnalysis">
+                        <div class="campaign_card_withAnalysis" data-campid="id_here">
+                            <a href="#" class="Card">
                             <div class="  campaign_card_withAnalysis_topbar h6 ">
                                 <p class="rel center inline">
                                     Campaign Name
@@ -106,13 +111,15 @@
                                     <p class="h7">Cost per Share</p>
                                 </div>
                             </div>
+                        </a>        
                         </div>
                        <!-- ###end: Campaign Card with some analysis info -->
                        
                    </div>
                    <div class="col col2">
                        <!-- ###start: Campaign Card with some analysis info -->
-                        <div class="campaign_card_withAnalysis">
+                        <div class="campaign_card_withAnalysis" data-campid="id_here">
+                            <a href="#" class="Card">
                             <div class="  campaign_card_withAnalysis_topbar h6 ">
                                 <p class="rel center inline">
                                     Campaign Name
@@ -142,13 +149,15 @@
                                     <p class="h7">Cost per Share</p>
                                 </div>
                             </div>
+                        </a>        
                         </div>
                        <!-- ###end: Campaign Card with some analysis info -->
                        
                    </div>
                    <div class="col col2">
                        <!-- ###start: Campaign Card with some analysis info -->
-                        <div class="campaign_card_withAnalysis">
+                        <div class="campaign_card_withAnalysis" data-campid="id_here">
+                            <a href="#" class="Card">
                             <div class="  campaign_card_withAnalysis_topbar h6 ">
                                 <p class="rel center inline">
                                     Campaign Name
@@ -178,6 +187,7 @@
                                     <p class="h7">Cost per Share</p>
                                 </div>
                             </div>
+                        </a>        
                         </div>
                        <!-- ###end: Campaign Card with some analysis info -->
                        

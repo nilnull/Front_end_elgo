@@ -16,7 +16,26 @@
             //get the data from the server for this 
             //by ajaxing or getting a preloaded table
         });
+        //open card to show analysis
+        $('.campaign_card_withAnalysis').click(function(event){
+            event.preventDefault();
+            campaign_id=$(this).data('campid');
+            //get the data for this Campaign
+                //#code here (ajax call probably)
+            //then show the Analysis
+                //dashboard_campaign_cards_tab,dashboard_campaign_analysisInfo_tab
+                $('.dashboard_campaign_cards_tab').hide();
+                $('.dashboard_campaign_analysisInfo_tab').show();
+        });
         
+        //from Analysis_tab to Cards_tabs in Dashboard
+        $('.dashboard_tab').click(function(event){
+            event.preventDefault();
+            $('.dashboard_campaign_cards_tab').show();
+            $('.dashboard_campaign_analysisInfo_tab').hide();
+        });
+        
+        //for userlist tab (overview and userlist)
         $('.toggle_Userlist_overview').click(function(event){
             
             $(".dashboard_campaign_overview").toggle();
@@ -76,18 +95,18 @@
 		<div class="card-container">
 			<span class="bold">Campaign:</span>
 			<a href="#" class="inline createCampaign-top-menu">Create</a>
-			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active">Dashboard</a>
+			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active dashboard_tab">Dashboard</a>
 		</div>
 		
 		
 		
 		<div class="row dashboard">
-            <div class="dashboard_campaign_cards_tab card-container" style="display:none;">
+            <div class="dashboard_campaign_cards_tab card-container" >
            <!--cards-->
 	       <?php include 'dashboard/cards.php';?>
             </div>    
              
-			<div class="dashboard_campaign_analysisInfo_tab card-container" >
+			<div class="dashboard_campaign_analysisInfo_tab card-container" style="display:none;">
                 <div class="row h6 sub_path">
                     <p class="inline" >Dashboard / <span class="bold ">Campaign 1 Name</span></p>
                 </div>
