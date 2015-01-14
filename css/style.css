@@ -262,6 +262,11 @@ html[xmlns] .clearfix{display: block}
 .bg-color--body{background-color:#e5e5e5}
 .bg-color--body-darker{background-color:#d5d5d5}
 
+.bg__color--google{background:#d03324;color:#fff;}
+.bg__color--google:after{background:#c73122}
+
+.bg__color--facebook{background:#415d96;color:#fff;}
+.bg__color--facebook:after{background:#3f5a91}
 
 
 /**
@@ -1763,6 +1768,23 @@ textarea.profile-form__field {
     background-color: #F3F3F3;
 }
 
+
+.table-paymentsTopup{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #FAFAFA;
+}
+
+.table-paymentsTopup td{
+	padding: 10px;
+	border-right: 2px solid #e5e5e5;
+}
+.table-paymentsTopup td:last-child {
+	border-right: none;
+}
+.table-paymentsTopup--noBorder td{
+	border-style: none;
+}
 .card--topup{
 	padding: 30px;
 	margin-top: 20px;
@@ -1857,10 +1879,9 @@ textarea.profile-form__field {
 	padding-right: 25px
 }
 .paymnet-topUp__next-btn{
-	padding: 13px 20px;
+	padding: 13px 30px;
 	margin-left: 10px;
 	font-size: 18px;
-	color: #ffffff;
 }
 
 .payment-topUp__margin-bottom{
@@ -1875,8 +1896,122 @@ textarea.profile-form__field {
 .payment__card-url{
 	margin-left:8px;
 	font-size:14px;
-	color:#858585;
+	color:#ff5569;
 	text-decoration:underline;
+}
+
+/*Brands Settings*/
+
+.table-brand__settings{
+	margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+	border-collapse: collapse;
+}
+.table-brand__settings th{
+	padding-left: 10px;
+	height: 40px;
+    font-size: 14px;
+	color: #fff;
+    text-align: left;
+	background-color: #3f4e54;
+}
+
+.table-brand__settings td:first-child {
+	border-left: 1px solid #B6BFC5;
+}
+
+.table-brand__settings td {
+    padding: 5px 15px 30px 15px;
+	color: #3f4e54;
+	text-align: left;
+	border: 1px solid #B6BFC5;
+    vertical-align: top;
+	border-collapse: collapse;
+}
+
+.table-brand__settings td  span{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.table-brand__settings--inside{
+	margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+	vertical-align: middle;
+	border-style: none;
+}
+.table-brand__settings--inside th{
+	padding: 0 0 10px 0;
+	font-size: 18px;
+	color: #3f4e54;
+	background-color: transparent;
+}
+.table-brand__settings--inside td,
+.table-brand__settings--inside td:first-child {
+	padding: 0 0 10px 0;
+	color: #3f4e54;
+	border-style: none;
+    vertical-align: middle;
+}
+
+.brand__setting-icon{
+	display:inline-block;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	padding:5px 8px;
+	color:#fff;
+}
+.brand__setting-icon .fa{
+	padding-top:6px;
+	padding-left: 4px;
+}
+.brand__setting-icon--facebook{background:#3b5998}
+.brand__setting-icon--google-plus{background:#dd4b39}
+
+.brand__setting-img{
+	display:inline-block;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background-color:#edece9;
+}
+.brand__setting-img img{
+	padding: 10px;
+	height: 60px;
+}
+.table-brand__settings--inside td.brandSettings__form--label{
+	margin-right: 10px;
+	color: #B0B0B0;
+	font-size: 16px;
+}
+.brandSettings__form{	
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #717e85;
+}
+.brandSettings__form--checkboxLabel{
+	display:block;
+}
+.brandSettings__form--select{
+	width: 100%;
+	height : 25px;
+	border: 1px solid #B6BFC5;
+}
+select.brandSettings__form--select{
+	appearance:none;
+	-moz-appearance:none; /* Firefox */
+	-webkit-appearance:none; /* Safari and Chrome */
+	overflow: hidden;
+	background: url('../img/arrow.png') no-repeat right;
+
 }
 
 .profile_submenu {
