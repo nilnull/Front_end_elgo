@@ -14,14 +14,14 @@
 		<div class="row subtab-content" id="brandProfile_About" >
 		
 			<div class="col col2">
-				<div class="card card-container  little_seperation">
+				<div class="card card-container  little_seperation space-inner-outer">
                     <p class="bold">About PETRONAS Brands </p>
                     <p class="gray-light-font bitSmallerFont">   
 					   This is an Offical PETRONAS manged page. Founded on 1974. Quisque fermentum 
                         purus diam, id mollis nulla feuget eget. Fusce semper eros dui.
                     </p>
 				</div>
-                <div class="card card-container  little_seperation">
+                <div class="card card-container  little_seperation space-inner-outer">
                     <p class="bold ">Overview </p>
                     <p class="gray-light-font bitSmallerFont">  
                         
@@ -33,7 +33,7 @@
                         
                     </p>
 				</div>
-                <div class="card card-container  little_seperation">
+                <div class="card card-container  little_seperation space-inner-outer">
                     <p class="bold">Tagline </p>
                     <p class="gray-light-font bitSmallerFont">  
                         

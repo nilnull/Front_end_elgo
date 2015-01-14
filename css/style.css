@@ -2179,6 +2179,17 @@ margin-top:15%;
     margin-bottom: 25px;
     margin-top: 20px;
 }
+.space-inner {
+    padding: 5px;
+}
+
+.space-inner-outer{
+    padding:5px;
+    margin: 5px;
+}
+.space-outer {
+    margin: 5px;
+}
 
 .space-left-inner {
     padding-left: 10px;
@@ -2186,12 +2197,22 @@ margin-top:15%;
 .space-left-outer {
     margin-left: 5px;
 }
-
+.space-horizental-inner {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.space-horizental-outer {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .space-vertical-outer {
     margin-up:3px;
     margin-bottom: 3px;
 }
-
+.space-vertical-inner {
+    padding-up:3px;
+    padding-bottom: 3px;
+}
 .side-left-menu__item-link.thinner {
  padding-bottom: 12px;
  padding-top: 12px;
