@@ -1,6 +1,14 @@
 <!--header-->
 	<?php include 'header.php';?>
-	
+<style>
+.ct-chart .ct-bar {
+  stroke-width: 25px;
+}
+.ct-chart .ct-label.ct-horizontal {
+  text-align: center;
+}
+</style>
+       
 <script>
     $(document).ready(function(){
         $('.loadUserInfo').click(function(event){
@@ -21,10 +29,47 @@
             groupName=$(this).data('group');
             $(this).addClass('bg-color--'+groups_colors[groupName]);//
         });
+        $('.select_element').click(function(){
+            $('.ct-chart.graph').parent().toggle();
+            $('.ct-chart.bars').parent().toggle();
+        });
+        //full description and explantion of the chart library in
+        //http://www.smashingmagazine.com/2014/12/16/chartist-js-open-source-library-responsive-charts/
+        // for charts //labels for x-axis and series for Y-axis
+        //graph chart
+        var graph_data={
+          labels: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', 'Today'],
+          series: [
+            [15, 50, 60, 75, 90, 40, 60,40]
+          ]
+        };
+        var graph_options={
+          width: 1100,
+          height: 320,
+        lineSmooth: false
+        };
+        new Chartist.Line('.ct-chart.graph', graph_data, graph_options);
+        
+        //bar chart
+        var bar_data={
+          labels: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', 'Today'],
+          series: [
+            [15, 50, 60, 75, 90, 40, 60, 40],
+            [20, 50, 10, 30, 30, 55, 80, 30],
+              [95, 80, 50, 7, 20, 50, 10, 20]
+          ]
+        };
+        var bar_options={
+          width: 1100,
+          height: 320,
+        seriesBarDistance: 25,
+        };
+        new Chartist.Bar('.ct-chart.bars', bar_data, bar_options);
         
     });
 </script>
-	
+	<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<link href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />
 	<!--Content-->
 	<section class="wrap mainBody-container">
 	
@@ -52,7 +97,7 @@
                             <div class=" row " >
                                 <span class="">Spent Today</span>
                                 <span class="float-right percentage_num hide"  data-percentage-variable="userJoined" >3%</span>
-                                <div class="percentage_bar small bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                <div class="percentage_bar small bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                 <div class=" info_btm">3.5 of 1,000</div>
                             </div>
                         </div>
@@ -60,7 +105,7 @@
                             <div class=" row " >
                                 <span>Total Spent</span> 
                                 <span class="float-right percentage_num hide"  data-percentage-variable="userJoined" >80%</span>
-                                <div class="percentage_bar small bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                <div class="percentage_bar small bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                 <div class=" info_btm">800 of 1,000</div>
                             </div>
                         </div>
@@ -68,14 +113,14 @@
                             <div class=" row " >
                                 <span>End Date</span>
                                 <span class="float-right percentage_num hide"  data-percentage-variable="userJoined" >30%</span>
-                                <div class="percentage_bar small bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                <div class="percentage_bar small bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                 <div class=" info_btm">24Jan ( 17 days left)</div>
                             </div>
                         </div>
                     </div>
                     <div class=" inline float-right campaign_type">Type: <span class="bold ">POST</span></div>
                 </div>
-                <div class="dashboard_campaign_userListing">
+                <div class="dashboard_campaign_userListing" style="display:none;">
                     <div class="row">
                         <div class="col col20">
                             
@@ -155,7 +200,7 @@
                 </div>
                 
 <!--                start of the analysis overview       -->
-                <div class="dashboard_campaign_overview" style="display:none;">
+                <div class="dashboard_campaign_overview" >
                     <div class="row dashboard_campaign_analysisInfo-stats ">
                         <div class="row dashboard_campaign_analysisInfo-stats_topbar">
                             <div class="col col2  dashboard_campaign_analysisInfo-stats_topbar-nums">
@@ -190,9 +235,14 @@
                         </div>
                         <div class="row dashboard_campaign_analysisInfo-stats_chart">
                             <div class="row dashboard_campaign_analysisInfo-stats_chart-graph">
-
+                                    <div class="ct-chart graph col col1" >
+                                        
+                                    </div>
                             </div>
                             <div class="row dashboard_campaign_analysisInfo-stats_chart-bars" style="display:none;">
+                                <div class="ct-chart bars col col1" >
+                                        
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -219,17 +269,17 @@
                                     <div class="row" >
                                         <span>Total User Joined: 1,770</span>
                                         <span class="float-right percentage_num"  data-percentage-variable="userJoined">60%</span>
-                                        <div class="percentage_bar bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                        <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                     </div>
                                     <div class="row" >
                                         <span>Total User Joined: 1,770</span>
                                         <span class="float-right percentage_num"  data-percentage-variable="userDeclined">15%</span>
-                                        <div class="percentage_bar bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                        <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                     </div>
                                     <div class="row" >
                                         <span>Total User Joined: 1,770</span>
                                         <span class="float-right percentage_num"  data-percentage-variable="userPending">25%</span>
-                                        <div class="percentage_bar bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                        <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                     </div>
 
                                 </div>
@@ -241,7 +291,7 @@
                                             <div class="col col2">
                                                 <span>Facebook: 550 (Pay per Post:0.3)</span>
                                                 <span class="float-right percentage_num"  data-percentage-variable="FacebookJoined">60%</span>
-                                                <div class="percentage_bar bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                                <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                             </div>    
                                             <div class="col col40 info-bubble">
                                                 <div class="">
@@ -253,7 +303,7 @@
                                             <div class="col col2">
                                                 <span>Twitter: 250 (Pay per Post:0.2)</span>
                                                 <span class="float-right percentage_num"  data-percentage-variable="TwitterJoined">15%</span>
-                                                <div class="percentage_bar bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                                <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                             </div>    
                                             <div class="col col40 info-bubble">
                                                 <div class="">
@@ -265,7 +315,7 @@
                                             <div class="col col2">
                                                 <span>Left: 150</span>
                                                 <span class="float-right percentage_num"  data-percentage-variable="Left">25%</span>
-                                                <div class="percentage_bar bg-color--body" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                                <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
                                             </div>    
                                             <div class="col col40 info-bubble">
                                                 <div class="">
