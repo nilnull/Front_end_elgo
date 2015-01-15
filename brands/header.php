@@ -94,3 +94,23 @@
 			<li class="inline"><a href="#"><i class="fa fa-gear user-nav__fa-gear"></i></a></li>
 		</ul>
 	</section>
+    
+    
+<?php
+//just for tests
+$people_photos=array(
+    'http://eil.com/images/main/Gnarls-Barkley-Crazy-354180.jpg',
+    'http://www.sohh.com/wp-content/uploads/2014/06/eminem-2012-07-05-300x3003.png',
+    'http://xfinity.comcast.net/blogs/tv/files/2013/08/alec-baldwin.jpg',
+    'http://img1.wikia.nocookie.net/__cb20131231005207/disney/images/2/2e/Will_Turner_Headshot.jpg',
+    'http://news.bbcimg.co.uk/media/images/69247000/jpg/_69247083_einsteingettyafp.jpg',
+    'http://www.dazzlingwallpaper.com/image/1359119289_angelina_jolie_famous_face_of_hollywood.jpg'
+);
+$people_names=array('Gnarls Barkley',
+       'Marshal Mather',
+       'alec baldwin',
+       'will turner',
+       'einstien',
+       'Angelina'
+            );
+?>

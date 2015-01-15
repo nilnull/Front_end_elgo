@@ -38,14 +38,16 @@
                         </div>
                     </div>
                     <div class="users-list  h7 text-color--grey--darker">
-                        <?php $i=0; while($i<5){?>
-                        <div class="user ">
+                        <?php 
+                        $i=0; while($i<5){
+                        ?>
+                        <div class="user <?=($i==1)? 'active':''?>">
                             <a href="#" class="text-color--grey--darker">
                             <div class="user-msg-photo inline">
-                                <img src="http://www.100open.com/wp-content/uploads/2011/04/Lego-logo.jpeg" class="circle user-avatar--header">
+                                <img src="<?=$people_photos[$i]?>" class="circle user-avatar--header">
                             </div>
                             <div class="user-msg-name inline">
-                                <span class="h6 inline "> Azwan Aziz</span>
+                                <span class="h7 bold inline "> <?=$people_names[$i]?></span>
                             </div>
                             </a>
                         </div>
@@ -57,26 +59,44 @@
                 <!-- message content -->
                 <div class="col col75  right-panel">
                     <div class="msg-body">
+                        <?php $i=0; while($i<5){?>
                             <div class="message ">
-                                <a href="#" class="text-color--grey--darker">
-                                <div class="user-msg-photo inline">
+                                <div class="user-msg-photo inline rel float-left">
                                     <img src="http://www.100open.com/wp-content/uploads/2011/04/Lego-logo.jpeg" class="circle user-avatar--header">
                                 </div>
-                                <div class="user-msg-name inline float-right">
-                                    <div class="h6  inline float-left "> 
-                                        <span>
-                                            Azwan
+                                <div class="user-msg-info inline ">
+                                    <div class="row   block msg-info "> 
+                                        <span class="inline h7 bold float-left ">
+                                            Lego
                                         </span>
-                                        <span class="h9 inline float-right">
+                                        <span class="h9 light inline float-right text-color--grey--lighter">
                                             1 Jan 2015, 5:45pm
                                         </span>
                                     </div>
-                                    <div class="h7 float-left">
+                                    <div class="row h7 light block ">
                                         bluasdj kjasdnkamsd ajs njasd jaksld askldja sdklasjd kasdj askdj lasj kl jaskl 
                                     </div>
                                 </div>
-                                </a>
                             </div>
+                            <div class="message ">
+                                <div class="user-msg-photo inline rel float-left">
+                                    <img src="<?=$people_photos[1]?>" class="circle user-avatar--header">
+                                </div>
+                                <div class="user-msg-info inline ">
+                                    <div class="row   block msg-info "> 
+                                        <span class="inline h7 bold float-left bold">
+                                            <?=$people_names[1]?>
+                                        </span>
+                                        <span class="h9 light inline float-right text-color--grey--lighter">
+                                            1 Jan 2015, 5:45pm
+                                        </span>
+                                    </div>
+                                    <div class="row h7 light block ">
+                                        bluasdj kjasdnkamsd ajs njasd jaksld askldja sdklasjd kasdj askdj lasj kl jaskl 
+                                    </div>
+                                </div>
+                            </div>
+                        <?php $i++; }?>
                     </div>
                     <div class="write-new-msg">
                         <div class="user-msg-photo inline">

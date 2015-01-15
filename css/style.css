@@ -2486,6 +2486,9 @@ margin-top: 15px;
 .h9 {
     font-size:12px;
 }
+.h10{
+    font-size: 10px;
+}
 
 .campaing-card-bottombar-moreinfo .state {
     padding-top:10px;
@@ -2613,6 +2616,10 @@ margin-top: 15px;
 
 .msg-body .message {
     border-top: 1px solid #b6bfc5;
+    height: auto;
+    min-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .messaging-display-form .msg-body {
@@ -2646,4 +2653,23 @@ margin-top: 15px;
 	padding: 13px 0 13px 2px;
 	border-top: 1px solid #c5cbcf;
 	border-bottom: 1px solid #c5cbcf;
+}
+
+.message .user-msg-info {
+    width: 769px;
+    margin-top: 5px;
+    padding-top: 0px;
+}
+
+.user-msg-info .msg-info {
+    margin-bottom:  2px;
+}
+
+.message .user-msg-photo {
+
+}
+
+.users-list .user.active {
+    background-color: #b6bfc5;
+    
 }
