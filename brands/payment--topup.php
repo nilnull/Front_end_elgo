@@ -96,34 +96,30 @@
 			<a href="#" class="inline createCampaign-top-menu">Add</a>
 			
 			<div class="row">
-				<div class="col col30">
-					<div class="card--topup">
-						<div class="row">
-							<div class="col col2 text-left bold">Account <br>Balance</div>
-							<div class="col col2 text-right bold">100</div>
-						</div>
-					</div>
-				</div>
-				<div class="col col70">
-					<div class="card--topup"  style="margin-left:1px;">
-						<div class="col col10 bold"> 
-							Reload <br> Now
-						</div>
-						<div class="col" style="width:45%;">
-							<label>Amount*(USD):</label>
-							<input type="text" class="payment-form__field" placeholder="Min. 50 USD">
-						</div>
-						<div class="col col30">
-							<select class="payment-form__select">
-								<option>Payment method</option>
-								<option>Payment method</option>
-							</select>
-						</div>
-						<div class="col" style="width:15%;">
-							<input type="button" onclick="open_popup('js-topup-payment')" class="float-left btn paymnet-topUp__next-btn btn__bg-color--red" value="NEXT">
-						</div>
-					</div>
-				</div>
+				<table width="100%" class="table-paymentsTopup">
+					<td width="30%">
+						<table class="table-paymentsTopup--noBorder">
+							<td class="bold" width="200">Account <br>Balance</td>
+							<td class="bold" width="200" align="right">100</td>
+						</table>
+					</td>
+					<td width="70%">
+						<table class="table-paymentsTopup--noBorder">
+							<td class="bold">Reload <br> Now</td>
+							<td>Amount*(USD):</td>
+							<td><input type="text" class="payment-form__field" placeholder="Min. 50 USD"></td>
+							<td>
+								<select class="payment-form__select">
+									<option value="1" data-description="Expires 1/2017">American Express</option>
+									<option value="2" data-description="Expires 1/2017">Visa</option>
+								</select>
+							</td>
+							<td>
+								<a href="#js-topup-payment" class="btn btn__bg-color--red paymnet-topUp__next-btn js-popup">NEXT</a>
+							</td>
+						</table>
+					</td>
+				<table>
 			</div>
 			<div class="row">
 				<div class="col col20">
@@ -191,7 +187,7 @@
 			<p class="payment-topUp__margin-bottom">After you have successfully made the payment, you will be redirect back into eligo website.</p>
 			
 			<div class="row">
-				<input type="button" onclick="open_popup('js-topup-checkout')" class="paymnet-topUp__next-btn btn__bg-color--red" value="NEXT">
+				<a href="#js-topup-checkout" class="btn btn__bg-color--red paymnet-topUp__next-btn js-popup">NEXT</a>
 			</div>
 		</div>
 	</div>
@@ -233,6 +229,7 @@
 	<script src="../js/jquery.fancybox.js"></script>
 	<script src="../js/main.js"></script>
 	<script src="../js/select.js"></script>
+	<script src="../js/jquery.ddslick.js"></script>
 	<script>
 	
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -244,6 +241,13 @@
 		ga('send', 'pageview');
 		
 	</script>
-
+	<script>
+		$( document ).ready(function() {
+			$('.payment-form__select').ddslick({
+				selectText: "Select your favorite social network",
+				 defaultSelectedIndex:1
+			});
+		});
+	</script>
 </body>
 </html>
