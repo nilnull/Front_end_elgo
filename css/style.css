@@ -521,6 +521,7 @@ html[xmlns] .clearfix{display: block}
 .card-container--s{padding:10px;}
 .card-bgColor--white{background-color:#fff;}
 .card-bgColor--blue{background-color:#1792e9;}
+.card-bgColor--body{background-color:#e5e5e5;}
 .card__desc{font-size:16px;}
 .card-title{
 	padding-top:0;
@@ -2532,7 +2533,20 @@ margin-top: 15px;
     margin-left: 44%;
 }
 
-.messaging-body {
-    margin:19px 25px 19px 25px;
-    height: 555px;
+/*NOTIFICATIONS*/
+.table-notifications{
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+	border-collapse: collapse;
+}
+.table-notifications th{
+	padding: 5px 2px;
+	font-weight: bold;
+}
+.table-notifications td{
+	padding: 13px 0 13px 2px;
+	border-top: 1px solid #c5cbcf;
+	border-bottom: 1px solid #c5cbcf;
 }
