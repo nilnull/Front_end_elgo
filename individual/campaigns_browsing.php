@@ -3,7 +3,7 @@
 	
 	<script>
 		$(document).ready(function() {
-			$('a[href="#Completed"]').trigger('click');
+			$('a[href="#All"]').trigger('click');
 		});
 	</script>
 	<!--Profile-->
@@ -62,6 +62,9 @@
                     </div>
                 </div>
                 <?php $i++;}?>
+                <div class="row col col10 center loadmore_btn" >
+                    <input type="submit" class=" center btn  btn-bottom btn__bg-color--grey--light light" value="LOAD MORE">
+                </div>
             </div>
 		</div>
         
