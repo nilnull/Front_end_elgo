@@ -167,6 +167,7 @@ html[xmlns] .clearfix{display: block}
 .col40{width:40%}
 .col60{width:60%}
 .col70{width:70%}
+.col75{width:75%}
 .col80{width:80%}
 .col90{width:90%}
 .col0-5{width:5%}
@@ -2504,15 +2505,20 @@ margin-top: 15px;
 .custom-text-input input{
     border: 0px;
     height:100%;
-    width:180px;
+    width:80%;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left:10px;
 }
+
 
 .custom-text-input {
     height:35px;
     width:215px;
     border: 1px solid #d5d5d5;
+}
+.messaging-display-form .custom-text-input{
+ width: 100%;   
 }
 
 .top-submenu-bar {
@@ -2524,7 +2530,6 @@ margin-top: 15px;
     padding-top:5px;
     padding-left: 6px;
     padding-right: 6px;
-    
 }
 
 .loadmore_btn {
@@ -2532,7 +2537,94 @@ margin-top: 15px;
     margin-left: 44%;
 }
 
-.messaging-body {
+.messaging-display-form {
     margin:19px 25px 19px 25px;
     height: 555px;
+    padding:0px;
+}
+
+
+
+
+.messaging-display-form .header {
+    height:50px;
+    border-bottom:1px solid #b6bfc5;
+    
+}
+.messaging-display-form .left-panel{
+    border-right:1px solid #b6bfc5;
+    height:100%;
+    
+}
+.messaging-display-form .right-panel{
+    height:100%;
+    padding: 14px;
+    
+}
+
+.messaging-display-form .content {
+    height: 505px;
+}
+
+
+
+.messaging-display-form .new_msg {
+    height:100%;
+    margin-top: 9px;
+    margin-right: 9px;
+    padding: 9px;
+}
+
+.messaging-display-form .list-label {
+    margin: 9px;
+}
+
+
+
+.messaging-display-form .search {
+    height: 54px;
+    
+}
+
+.messaging-display-form .users-list .user {
+    height:53px;
+    border-top: 1px solid #b6bfc5;
+    border-collapse: collapse;
+    padding-top:6px 10px 6px 10px;
+    
+}
+
+.messaging-display-form .user-avatar--header{
+    margin:8px;
+	width:40px;
+	height:40px;
+}
+
+.messaging-display-form a,.messaging-display-form a :active{
+ text-decoration: none;   
+
+}
+
+.messaging-display-form .write-new-msg {
+    height: 70px;
+    border-top: 1px solid #b6bfc5;    
+}
+
+.msg-body .message {
+    border-top: 1px solid #b6bfc5;
+}
+
+.messaging-display-form .msg-body {
+    border-bottom: 1px solid #b6bfc5;
+    height:420px;
+    overflow-y:scroll;
+}
+
+.messaging-display-form .custom-text-input {
+    margin: 10px;
+    width:90%;
+}
+
+.messaging-display-form .right-panel .custom-text-input input {
+    width: 100%;
 }

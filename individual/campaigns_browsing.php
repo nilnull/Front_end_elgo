@@ -18,7 +18,7 @@
                 <div class="js-custom_menu__item inline " ><a href="#Completed" data-level="one" class=" top-submenu">Completed (4)</a></div>
             </div>
             <div class="float-right inline custom-text-input "> 
-                <div class="inline h6 text-color--grey searchicon"><span class="fa fa-search"></span></div>
+                <div class="float-left inline h6 text-color--grey searchicon"><span class="fa fa-search"></span></div>
                 <input type="text" class="float-right inline bg-color--body light h9 text-color--grey"  placeholder="Search">
             </div>
         </div>
