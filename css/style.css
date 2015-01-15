@@ -241,7 +241,11 @@ html[xmlns] .clearfix{display: block}
 .text-color--blue{color:#1792e9}
 .text-color--body{color:#e5e5e5}
 .text-color--body--darker{color:#a5a5a5}
-.text-color--grey--light{color:#f3f3f3}
+
+.text-color--grey--lightest{color:#dcdddf}
+.text-color--grey--lighter{color:#b6bfc5}
+.text-color--grey{color:#717e85}
+.text-color--grey--darker{color:#3f4e54}
 
 
 /**
@@ -250,13 +254,19 @@ html[xmlns] .clearfix{display: block}
 
 .bg-color--white{background-color:#fff}
 .bg-color--black{background-color:#000}
-.bg-color--red{background-color:#ff004e}
-.bg-color--blue{background-color:#1792e9}
+.bg-color--red{background-color:#e7304d}
+.bg-color--blue{background-color:#089bd9}
 .bg-color--orange{background-color:#ffa200}
 .bg-color--slateblue{background-color:#7242c3}
 .bg-color--pinegreen{background-color:#018165}
 .bg-color--bondieblue{background-color:#00a0b1}
 .bg-color--grey--light{background-color:#f3f3f3}
+
+.bg-color--grey--lightest{background-color:#dcdddf}
+.bg-color--grey--lighter{background-color:#b6bfc5}
+.bg-color--grey{background-color:#717e85}
+.bg-color--grey--darker{background-color:#3f4e54}
+
 .bg-color--grey--dark{background-color:#242424}
 .bg-color--atomic{background-color:#3f4e54}
 .bg-color--body{background-color:#e5e5e5}
@@ -2385,4 +2395,9 @@ margin-top: 15px;
 .loadmore_btn {
     margin-top: 50px;
     margin-left: 44%;
+}
+
+.messaging-body {
+    margin:19px 25px 19px 25px;
+    height: 555px;
 }
