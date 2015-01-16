@@ -1,206 +1,358 @@
-<!DOCTYPE html>
-<!--[if IE 7]>     <html class="ie7" lang="en-us"> <![endif]-->
-<!--[if IE 8]>     <html class="ie8" lang="en-us"> <![endif]-->
-<!--[if IE 9]>     <html class="ie9" lang="en-us"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en-us"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="author" content="Pi">
-	<title>eligo.me</title>
-	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="../css/style.css?v=1.0" media="all" />
-	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<style>
-	.card-container--s{min-height:136px}
-	</style>	
-</head>
-
-<body class="inside-page">
-
-	<!--Red top border-->
-	<div class="top-border bg-color--red"></div>
-	
-	
-	
-	<!--Header-->
-	<div class="bg-color--black">	
-	
-		<header>
-			<div class="wrap">
-				<div class="header-container row">
-					<a href="./"><img src="../img/logo.png" alt="eligo logo float-left"></a>
-					<div class="float-right">
-						<img src="../img/credit.png" class="inline img-credit">
-						<div class="inline text-color--white">100</div>
-						<img src="http://www.100open.com/wp-content/uploads/2011/04/Lego-logo.jpeg" class="circle user-avatar--header">
-						<a href="#" class="btn__header__item"><i class="fa fa-bars v-middle text-color--white"></i></a>
-					</div>
-				</div>
-			</div>
-		</header>
-	
-	</div>
-	
-	
-	
-	
-	<!--Cover Photo-->
-	<section class="rel wrap profile__cover">
-	
-		<img src="../img/individual/sample_cover_photo.jpg" class="abs top profile__cover-photo">
-		
-		<div class="rel profile__cover-score">
-			
-			<img src="http://www.100open.com/wp-content/uploads/2011/04/Lego-logo.jpeg" class="inline circle profile__cover-avatar">
-			
-		</div>
-		
-		<div class="abs bottom margin-center text-center profile__cover-userInfo">
-			<div class="profile__cover-copy">
-				<span class="bold h5">Little Elephant</span>
-				<ul class="no-style no-padding no-margin">
-					<li class="profile__cover-userInfo-details">Selangor, Malaysia</li>
-					<li class="profile__cover-userInfo-details">madebysource.com</li>
-					<li class="profile__cover-userInfo-details">Joined December 2014</li>
-				</ul>
-			</div>
-		</div>
-		
-	</section>
-	
-	
-	
-	
-	<!--Individu Navigation-->
-	<section class="wrap text-center">
-		<ul class="bg-color--white no-style no-margin no-padding">
-			<li class="inline"><a href="#" class="user-nav__item bold">Profile</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Create Campaigns</a></li>
-			<li class="inline"><a href="#" class="user-nav__item user-nav__item--active bold">Users Insigths</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Notifications</a></li>
-			<li class="inline"><a href="#"><i class="fa fa-gear user-nav__fa-gear"></i></a></li>
-		</ul>
-	</section>
-	
-	
-	
-	
+<!--header-->
+	<?php include 'header.php';?>
+<style>
+.ct-chart .ct-bar {
+  stroke-width: 25px;
+}
+.ct-chart .ct-label.ct-horizontal {
+  text-align: center;
+}
+</style>
+       
+<script>
+    $(document).ready(function(){
+        $('.loadUserInfo').click(function(event){
+            userlist_type=$(this).data('type');
+            //get the data from the server for this 
+            //by ajaxing or getting a preloaded table
+        });
+        //open card to show analysis
+        $('.campaign_card_withAnalysis').click(function(event){
+            event.preventDefault();
+            campaign_id=$(this).data('campid');
+            //get the data for this Campaign
+                //#code here (ajax call probably)
+            //then show the Analysis
+                //dashboard_campaign_cards_tab,dashboard_campaign_analysisInfo_tab
+                $('.dashboard_campaign_cards_tab').hide();
+                $('.dashboard_campaign_analysisInfo_tab').show();
+        });
+        
+        //from Analysis_tab to Cards_tabs in Dashboard
+        $('.dashboard_tab').click(function(event){
+            event.preventDefault();
+            $('.dashboard_campaign_cards_tab').show();
+            $('.dashboard_campaign_analysisInfo_tab').hide();
+        });
+        
+        //for userlist tab (overview and userlist)
+        $('.toggle_Userlist_overview').click(function(event){
+            
+            $(".dashboard_campaign_overview").toggle();
+            $(".dashboard_campaign_userListing").toggle();
+        });
+        
+        //for coloring groups
+        var groups_colors = {proSocialMedia:"orange", Malaysia:"red"};
+        $( ".groupSquareColor" ).each(function( index ) {
+            groupName=$(this).data('group');
+            $(this).addClass('bg-color--'+groups_colors[groupName]);//
+        });
+        $('.select_element').click(function(){
+            $('.ct-chart.graph').parent().toggle();
+            $('.ct-chart.bars').parent().toggle();
+        });
+        //full description and explantion of the chart library in
+        //http://www.smashingmagazine.com/2014/12/16/chartist-js-open-source-library-responsive-charts/
+        // for charts //labels for x-axis and series for Y-axis
+        //graph chart
+        var graph_data={
+          labels: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', 'Today'],
+          series: [
+            [15, 50, 60, 75, 90, 40, 60,40]
+          ]
+        };
+        var graph_options={
+          width: 1100,
+          height: 320,
+        lineSmooth: false
+        };
+        new Chartist.Line('.ct-chart.graph', graph_data, graph_options);
+        
+        //bar chart
+        var bar_data={
+          labels: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', 'Today'],
+          series: [
+            [15, 50, 60, 75, 90, 40, 60, 40],
+            [20, 50, 10, 30, 30, 55, 80, 30],
+              [95, 80, 50, 7, 20, 50, 10, 20]
+          ]
+        };
+        var bar_options={
+          width: 1100,
+          height: 320,
+        seriesBarDistance: 25,
+        };
+        new Chartist.Bar('.ct-chart.bars', bar_data, bar_options);
+        
+    });
+</script>
+	<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<link href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />
 	<!--Content-->
 	<section class="wrap mainBody-container">
 	
 		<div class="card-container">
 			<span class="bold">Campaign:</span>
 			<a href="#" class="inline createCampaign-top-menu">Create</a>
-			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active">Dashboard</a>
+			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active dashboard_tab">Dashboard</a>
 		</div>
 		
 		
 		
 		<div class="row dashboard">
-            <div class="card-container row">
-                    <div class="col col2 h6">
-                            Dashboard/Be A LEGO Creator <span class="bold">/Users</span>
-                    </div >
-                
-                    <div class=" h7 float-right">
-                        Type: <span class="bold">SHARE</span>&nbsp;
-                        <a href="#" >Edit</a>&nbsp;
-                        <a href="#" >Preview</a>&nbsp;
-                        <a href="#" >Invite More</a>&nbsp;
-                    </div >
-            </div>
-            <div class="card-container row h8">
-                    <div class="col col5 ">
-                         <span class="bold">Sort by:</span> Invited applied
-                    </div >
-                    <div class="col col5 ">
-                             <span class="bold">Status:</span> Accepted Declined Pending
-                    </div >
-                    <div class="col col5 ">
-                             <span class="bold">Posted:</span> All Facebook Twitter
-                    </div >
-                    <div class="col col5 ">
-                             <span class="bold">Reach:</span> Top Engagment
-                    </div >
-                    <div class="col col5 ">
-                             
-                    </div >
-            </div>
-            <div class="row card-container ">
-                <table class="dashboard-table h7 table-responsive" style="width:100%"  cellpadding="30">
+            <div class="dashboard_campaign_cards_tab card-container" >
+           <!--cards-->
+	       <?php include 'dashboard/cards.php';?>
+            </div>    
+             
+			<div class="dashboard_campaign_analysisInfo_tab card-container" style="display:none;">
+                <div class="row h6 sub_path">
+                    <p class="inline" >Dashboard / <span class="bold ">Campaign 1 Name</span></p>
+                </div>
+                <div class="row h6 ">
+                    <div class="inline col col2 small-percentage_info h7">
+                        <div class="col col3 space-left-inner">
+                            <div class=" row " >
+                                <span class="">Spent Today</span>
+                                <span class="float-right percentage_num hide"  data-percentage-variable="userJoined" >3%</span>
+                                <div class="percentage_bar small bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                <div class=" info_btm">3.5 of 1,000</div>
+                            </div>
+                        </div>
+                        <div class="col col3 space-left-inner">
+                            <div class=" row " >
+                                <span>Total Spent</span> 
+                                <span class="float-right percentage_num hide"  data-percentage-variable="userJoined" >80%</span>
+                                <div class="percentage_bar small bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                <div class=" info_btm">800 of 1,000</div>
+                            </div>
+                        </div>
+                        <div class="col col3 space-left-inner">
+                            <div class=" row " >
+                                <span>End Date</span>
+                                <span class="float-right percentage_num hide"  data-percentage-variable="userJoined" >30%</span>
+                                <div class="percentage_bar small bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                <div class=" info_btm">24Jan ( 17 days left)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" inline float-right campaign_type">Type: <span class="bold ">POST</span></div>
+                </div>
+                <div class="dashboard_campaign_userListing" style="display:none;">
+                    <div class="row">
+                        <div class="col col20">
+                            
+                            <div class="row left-menu">
+                                <div class=" toggle_Userlist_overview">
+                                    <a href="#userlist" class="side-left-menu__item-link ">
+                                        <h6 class="h7 ">BACK</h6>
+                                    </a>
+                                </div>
+                                <div class=" js-custom_menu__item">
+                                    <a href="#userlist_invited" data-type="invited" class="side-left-menu__item-link thinner active loadUserInfo">
+                                        <h6 class="h7 ">Invited (1,890)</h6>
+                                    </a>
+                                </div>
 
-                        <tr class="MainTitle">
-                            <th colspan="5">
-                                Be A LEGO CREATOR
-                            </th>
-                            <th colspan="4">
-                                Posted
-                            </th>
-                        </tr>
-                        <tr>
-                            <th >Individual</th>
-                            <th >Group Name</th>
-                            <th >State</th>
-                            <th >Action</th>
-                            <th >Status</th>
-                            <th class="h5"><span class="social-circle fa fa-facebook"></span></th>
-                            <th class="h5"><span class="social-circle fa fa-twitter"></span></th>
-                            <th class="h5"><span class="social-circle fa fa-google-plus"></span></th>
-                            <th class="h5"><span class="social-circle fa fa-linkedin"></span></th>
-                        </tr>
-                    <tbody>
-                        <?php $i=0;
-                        while($i<3){
-                        ?>
-                        <tr>
-                            <td>test</td>
-                            <td>Group random Name</td>
-                            <td class="green">Applied</td>
-                            <td>test</td>
-                            <td ><span class="task-done fa fa-check"></span></td>
-                            <td ><span class="task-done fa fa-check "></span></td>
-                            <td ><span class="task-not-done fa fa-remove"></span></td>
-                            <td></td>
-                            <td ><div><span class="task-not-done fa fa-remove"></span></div></td>
-                        </tr>
-                        <tr>
-                            <td>test</td>
-                            <td>Group random Name</td>
-                            <td class="green">test</td>
-                            <td>test</td>
-                            <td ><span class="task-not-done fa fa-remove"></span></td>
-                            <td ><span class="task-not-done fa fa-remove"></span></td>
-                            <td ><span class="task-done fa fa-check "></span></td>
-                            <td></td>
-                            <td ><div><span class="task-done fa fa-check "></span></div></td>
-                        </tr>
-                        <tr>
-                            <td>test</td>
-                            <td>Group random Name</td>
-                            <td class="green">Invited</td>
-                            <td>test</td>
-                            <td ><span class="gray-font fa fa-remove"></span><span class="gray-font fa fa-check"></span></td>
-                            <td ><span class="task-not-done fa fa-remove"></span></td>
-                            <td ><div><span class="task-done fa fa-check "></span></div></td>
-                            <td></td>
-                            <td ><span class="task-done fa fa-check "></span></td>
-                        </tr>
-                        <?php $i++;}?>
-                    </tbody>
-                </table>		
-			</div>
-            <div class="row ">
-                <div class=" h7 float-right dashboard-pagination">
-                    <div class="col "><span class="bold inline"> <a href="#" class="">Prev</a> </span>&nbsp; Page </div>
-                    <div class="col col8"><input type="text" class="field" value="8"/></div>
-                    <div class="col ">&nbsp;/80<span class="bold"> <a href="#" class="">Next </a></span></div>
-                </div >
-            </div>
-			
+                                <div class=" js-custom_menu__item">
+                                    <a href="#userlist_applied" data-type="applied" class="side-left-menu__item-link thinner loadUserInfo">
+                                        <h6 class="h7 ">Applied (12)</h6>
+                                    </a>
+                                </div>
+                                
+                                <div class=" js-custom_menu__item">
+                                    <a href="#userlist_accepted" data-type="accepted" class="side-left-menu__item-link thinner loadUserInfo">
+                                        <h6 class="h7 ">Accepted (1,290)</h6>
+                                    </a>
+                                </div>
+                                
+                                <div class=" js-custom_menu__item">
+                                    <a href="#userlist_declined" data-type="declined" class="side-left-menu__item-link thinner loadUserInfo">
+                                        <h6 class="h7 ">Declined (2)</h6>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="row GroupInfo">
+                                <div class="title bold"> Groups</div>
+                                <div class="groupinfo_item"><div class="bulletpoint small_square groupSquareColor inline "  data-group='proSocialMedia'></div> Pro Social Media</div>
+                                <div class="groupinfo_item"><div class="bulletpoint small_square groupSquareColor  inline"  data-group='Malaysia'></div> Malaysia</div>
+                                <div class="groupinfo_item"><div class="bulletpoint task-done fa fa-check   inline"         data-group='Malaysia'></div> Task Completed (Posts/Hashtag-click to view more)</div>
+                            </div>
+                            <div class="row pagination">
+                                <div class="float-right">
+                                    <a href="#" class="text-color--red">prev</a>
+                                    <input class="custom_txt_input inline" type='text' value="10"/>of 12
+                                    <a href="#" class="text-color--red">Next</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col80 ">
+                            <div class="Custom_table bg-color--white h7"> 
+                                <div class="table_header row text-color--white bg-color--grey--dark">
+                                        <div class="border_transparent table_td col col2 ">User </div>
+                                        <div class="border_transparent table_td col col20 ">Time Invited</div>
+                                        <div class="border_transparent table_td col col20">Time Accepted</div>
+                                        <div class="border_transparent table_td col col10"><span class="fa fa-facebook"></span></div>
+                                </div> 
+                                <div class="table_body row">
+                                    <?php $i=0;while($i<10){?>  
+                                    <div class="table_row h7">
+                                        <div class="table_td col col2">
+                                            <div class="small_square groupSquareColor inline " data-group='proSocialMedia'></div>
+                                            <img src="http://www.100open.com/wp-content/uploads/2011/04/Lego-logo.jpeg" class="circle user-avatar--header-smaller">
+                                            Yvonne Ten
+                                        </div>
+                                        <div class="table_td col col20">20:10:05 10 Dec 2014</div>
+                                        <div class="table_td col col20">20:10:05 10 Dec 2014</div>
+                                        <div class="table_td col col10"><span class="task-done fa fa-check"></span></div>
+                                    </div>
+                                    <?php $i++;} ?>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+<!--                start of the analysis overview       -->
+                <div class="dashboard_campaign_overview" >
+                    <div class="row dashboard_campaign_analysisInfo-stats ">
+                        <div class="row dashboard_campaign_analysisInfo-stats_topbar">
+                            <div class="col col2  dashboard_campaign_analysisInfo-stats_topbar-nums">
+
+                                    <div class="col col4 dashboard_campaign_analysisInfo-stats_topbar__info">
+                                        <p class="h5 bold">7,200</p>
+                                        <p class="h7">Views</p>
+                                    </div>
+                                    <div class="col col4 dashboard_campaign_analysisInfo-stats_topbar__info">
+                                        <p class="h5 bold">1,750</p>
+                                        <p class="h7">Check-in</p>
+                                    </div>
+                                    <div class="col col4 dashboard_campaign_analysisInfo-stats_topbar__info active">
+                                        <p class="h5 bold">2,500</p>
+                                        <p class="h7">Spent</p>
+                                    </div>
+                                    <div class="col col4 dashboard_campaign_analysisInfo-stats_topbar__info">
+                                        <p class="h5 bold">0.001</p>
+                                        <p class="h7">Cost per Share</p>
+                                    </div>
+                            </div>
+                            <div class="inline float-right dashboard_campaign_analysisInfo-stats_topbar-charttype">
+                                <div class=" select_element ">
+                                    <span>overview select</span>
+                                    <select class="col col1" style="display:none;">
+                                        <option>
+                                            overview
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dashboard_campaign_analysisInfo-stats_chart">
+                            <div class="row dashboard_campaign_analysisInfo-stats_chart-graph">
+                                    <div class="ct-chart graph col col1" >
+                                        
+                                    </div>
+                            </div>
+                            <div class="row dashboard_campaign_analysisInfo-stats_chart-bars" style="display:none;">
+                                <div class="ct-chart bars col col1" >
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row dashboard_campaign_analysisInfo-summerytbl ">
+                        <div class="row dashboard_campaign_analysisInfo-summerytbl-thead"> 
+                            <div class="col col20 thead_td"> Campaign</div>
+                            <div class="col col0-5 thead_td"> start</div>
+                            <div class="col col0-5 thead_td"> end</div>
+                            <div class="col col30 thead_td"> User</div>
+                            <div class="col col40 thead_td"> Spent</div>
+                        </div>
+                        <div class="row dashboard_campaign_analysisInfo-summerytbl-tbody">
+                            <div class="tbody_tr">
+                                <div class="col col20   tbody_tr_td"> 
+                                    Campaing 1 name 
+                                    <p class="bold">(POSTS)</p>
+                                </div>
+                                <div class="col col0-5  tbody_tr_td"> 31 Dec</div>
+                                <div class="col col0-5  tbody_tr_td"> 24 Jan</div>
+                                <div class="col col30   tbody_tr_td"> 
+                                    <p class="bold">
+                                        Total Users Invited and Applied: 2,780
+                                    </p>
+                                    <div class="row" >
+                                        <span>Total User Joined: 1,770</span>
+                                        <span class="float-right percentage_num"  data-percentage-variable="userJoined">60%</span>
+                                        <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                    </div>
+                                    <div class="row" >
+                                        <span>Total User Joined: 1,770</span>
+                                        <span class="float-right percentage_num"  data-percentage-variable="userDeclined">15%</span>
+                                        <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                    </div>
+                                    <div class="row" >
+                                        <span>Total User Joined: 1,770</span>
+                                        <span class="float-right percentage_num"  data-percentage-variable="userPending">25%</span>
+                                        <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                    </div>
+
+                                </div>
+                                <div class="col col40   tbody_tr_td"> 
+                                        <p class="bold">
+                                            Spent 800 out of 1,000
+                                        </p>
+                                        <div class="row" >
+                                            <div class="col col2">
+                                                <span>Facebook: 550 (Pay per Post:0.3)</span>
+                                                <span class="float-right percentage_num"  data-percentage-variable="FacebookJoined">60%</span>
+                                                <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                            </div>    
+                                            <div class="col col40 info-bubble">
+                                                <div class="">
+                                                    1,343 out of 1,770 user completed this task.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" >
+                                            <div class="col col2">
+                                                <span>Twitter: 250 (Pay per Post:0.2)</span>
+                                                <span class="float-right percentage_num"  data-percentage-variable="TwitterJoined">15%</span>
+                                                <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                            </div>    
+                                            <div class="col col40 info-bubble">
+                                                <div class="">
+                                                    1,120 out of 1,770 user completed this task.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" >
+                                            <div class="col col2">
+                                                <span>Left: 150</span>
+                                                <span class="float-right percentage_num"  data-percentage-variable="Left">25%</span>
+                                                <div class="percentage_bar bg-color--body-darker" ><div class="percentage_bar-complete bg-color--red"></div></div>
+                                            </div>    
+                                            <div class="col col40 info-bubble">
+                                                <div class="">
+                                                    <a href="#" class="text-color--red">Invite more</a> users to join the campaign.
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                            <input class="btn small btn__bg-color--red Campaign_edit "      data-campid='CampaignID_here' type="submit" value="EDIT">
+                            <input class="btn small btn__bg-color--red Campaign_viewUsers toggle_Userlist_overview" data-campid='CampaignID_here' type="submit" value="VIEW ALL USERS">
+                    </div>
+                </div>
+            </div>    
 		</div>
 		
 	</section>

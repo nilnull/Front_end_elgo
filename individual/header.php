@@ -11,21 +11,32 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css?v=1.0" media="all" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../js/jquery.easing.1.3.min.js"></script>
 	<script src="../js/placeholders.js"></script>
 	<script src="../js/jquery.fancybox.js"></script>
-    <script src="../js/jquery.easing.1.3.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.blockui.js"></script>
-    <script src="../js/main.js"></script>
+	<script src="../js/main.js"></script>
+	
+	<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.blockui.js"></script>
+	<script>
+	
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<style>
-	.card-container--s{min-height:136px}
-	</style>	
+		ga('create', 'UA-53594061-5', 'auto');
+		ga('send', 'pageview');
+		
+	</script>
+	
+	
 </head>
 
 <body class="inside-page">
@@ -45,7 +56,7 @@
 					<div class="float-right">
 						<img src="../img/credit.png" class="inline img-credit">
 						<div class="inline text-color--white">100</div>
-						<img src="http://www.100open.com/wp-content/uploads/2011/04/Lego-logo.jpeg" class="circle user-avatar--header">
+						<img src="../img/individual/Lego-logo.jpeg" class="circle user-avatar--header">
 						<a href="#" class="btn__header__item"><i class="fa fa-bars v-middle text-color--white"></i></a>
 					</div>
 				</div>
@@ -63,8 +74,26 @@
 		<img src="../img/individual/sample_cover_photo.jpg" class="abs top profile__cover-photo">
 		
 		<div class="rel profile__cover-score">
+		
+			<div class="inline profile__cover-score__box profile__cover-score--eligo bg-color--red bold">
+				<div class="table">
+					<div class="table-cell">
+						<span>eligo Score</span>
+						<span class="h5">1.2</span><span class="h6">K</span>
+					</div>
+				</div>
+			</div>
 			
 			<img src="http://www.100open.com/wp-content/uploads/2011/04/Lego-logo.jpeg" class="inline circle profile__cover-avatar">
+			
+			<div class="inline profile__cover-score__box profile__cover-score--social bg-color--blue bold">
+				<div class="table">
+					<div class="table-cell">
+						<span>Social Score</span>
+						<span class="h5">1.2</span><span class="h6">K</span>
+					</div>
+				</div>
+			</div>
 			
 		</div>
 		
@@ -87,15 +116,14 @@
 	<!--Individu Navigation-->
 	<section class="wrap text-center">
 		<ul class="bg-color--white no-style no-margin no-padding">
+			<li class="inline"><a href="#" class="user-nav__item bold">Social Feed</a></li>
 			<li class="inline"><a href="#" class="user-nav__item bold">Profile</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Create Campaigns</a></li>
-			<li class="inline"><a href="#" class="user-nav__item user-nav__item--active bold">Users Insigths</a></li>
+			<li class="inline"><a href="#" class="user-nav__item bold">Campaigns</a></li>
+			<li class="inline"><a href="#" class="user-nav__item bold">Hashtags</a></li>
 			<li class="inline"><a href="#" class="user-nav__item bold">Notifications</a></li>
-			<li class="inline"><a href="#"><i class="fa fa-gear user-nav__fa-gear"></i></a></li>
+			<li class="inline"><a href="#"><i class="fa fa-gear user-nav__fa-gear-active user-nav__item--active"></i></a></li>
 		</ul>
 	</section>
-    
-    
 <?php
 //just for tests
 $brand_photos=array(
@@ -120,4 +148,4 @@ $people_names=array('Gnarls Barkley',
        'einstien',
        'Angelina'
             );
-?>
+?>	

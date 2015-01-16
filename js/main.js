@@ -246,6 +246,23 @@ $(document).ready(function(){
         $(".subtab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
+   
+   //percentage bar tehcnique  example in brands/dashboard.php
+   $( ".percentage_num" ).each(function( index ) {
+       percent_str=$(this).text();
+       $($(this).parent().find('.percentage_bar-complete')).css('width',percent_str);
+   });
+    
+    //this is for anymenu just make a style for the class with and without .active
+    $('.js-custom_menu__item a').click(function(){
+				var href = $(this).attr('href');
+                var level= $(this).data('level');
+				//$('.js-step' + href).show().siblings().hide();
+				$(this).addClass('active').parents().siblings().children('a').removeClass('active');
+                $('.level-'+level+'-tab').hide();
+                $(href).show();
+				return false;
+			});
 });
 
 

@@ -11,21 +11,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css?v=1.0" media="all" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="../js/jquery.easing.1.3.min.js"></script>
-	<script src="../js/placeholders.js"></script>
-	<script src="../js/jquery.fancybox.js"></script>
-    <script src="../js/jquery.easing.1.3.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.blockui.js"></script>
-    <script src="../js/main.js"></script>
-
 	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<style>
-	.card-container--s{min-height:136px}
-	</style>	
 </head>
 
 <body class="inside-page">
@@ -88,36 +76,67 @@
 	<section class="wrap text-center">
 		<ul class="bg-color--white no-style no-margin no-padding">
 			<li class="inline"><a href="#" class="user-nav__item bold">Profile</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Create Campaigns</a></li>
-			<li class="inline"><a href="#" class="user-nav__item user-nav__item--active bold">Users Insigths</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Notifications</a></li>
+			<li class="inline"><a href="#" class="user-nav__item bold">Campaigns</a></li>
+			<li class="inline"><a href="#" class="user-nav__item user-nav__item--active bold">Notifications</a></li>
+			<li class="inline"><a href="#" class="user-nav__item bold"></a></li>
 			<li class="inline"><a href="#"><i class="fa fa-gear user-nav__fa-gear"></i></a></li>
 		</ul>
 	</section>
-    
-    
-<?php
-//just for tests
-$brand_photos=array(
-    'http://eil.com/images/main/Gnarls-Barkley-Crazy-354180.jpg',
-    'http://eil.com/images/main/Gnarls-Barkley-Crazy-354180.jpg'
-);
-$people_photos=array(
-    'http://eil.com/images/main/Gnarls-Barkley-Crazy-354180.jpg',
-    'http://www.sohh.com/wp-content/uploads/2014/06/eminem-2012-07-05-300x3003.png',
-    'http://xfinity.comcast.net/blogs/tv/files/2013/08/alec-baldwin.jpg',
-    'http://img1.wikia.nocookie.net/__cb20131231005207/disney/images/2/2e/Will_Turner_Headshot.jpg',
-    'http://news.bbcimg.co.uk/media/images/69247000/jpg/_69247083_einsteingettyafp.jpg',
-    'http://www.dazzlingwallpaper.com/image/1359119289_angelina_jolie_famous_face_of_hollywood.jpg'
-);
-$brand_names=array('Lego',
-                    'Petronas'
-                   );
-$people_names=array('Gnarls Barkley',
-       'Marshal Mather',
-       'alec baldwin',
-       'will turner',
-       'einstien',
-       'Angelina'
-            );
-?>
+	
+	
+	
+	
+	<!--Profile-->
+	<section class="wrap mainBody-container">	
+		<div class="row">			
+			<div class="card-bgColor--body card card-container">
+				
+				<table class="table-notifications" width="100%"> 
+					<tr>
+						<th colspan="2">Today</th>
+					</tr>
+					<tr class="bg-color--table-active">
+						<td width="3%"><img src="../img/notifications/eligo-dollar.png"></td>
+						<td width="97%">You've earned 1.20 eligo Dollar today on <a class="text-color--red">Campaign Name </a>(HASHTAG). 8.52am.</td>
+					<tr>
+					<tr class>
+						<td><img src="../img/notifications/notification-icon.png"></td>
+						<td>You've earned 1.20 eligo Dollar today on <a class="text-color--red">Campaign Name </a> Name(HASHTAG). 8.52am.</td>
+					<tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	<!--Footer-->
+	<?php include '../include/footer.php';?>
+	
+	
+	
+	
+	<!--Popup-->
+	<?php include '../include/popup.php';?>
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../js/jquery.easing.1.3.min.js"></script>
+	<script src="../js/placeholders.js"></script>
+	<script src="../js/jquery.fancybox.js"></script>
+	<script src="../js/main.js"></script>
+	<script>
+	
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53594061-5', 'auto');
+		ga('send', 'pageview');
+		
+	</script>
+
+</body>
+</html>
