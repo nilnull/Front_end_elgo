@@ -182,7 +182,7 @@ html[xmlns] .clearfix{display: block}
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
-	border: 1px solid #ddd;
+	
 }
 .table-responsive.no-border {border:0}
 .wrap{
@@ -518,7 +518,7 @@ html[xmlns] .clearfix{display: block}
 	color:#343434;
 	background-color:#f2f2f2;
 }
-.card-container{margin-top:6px; padding-left: 30px;}
+.card-container{margin-top:6px; padding-left: 30px; padding-bottom: 27px; padding-top: 27px;}
 .card-container--s{padding:10px;}
 .card-bgColor--white{background-color:#fff;}
 .card-bgColor--blue{background-color:#1792e9;}
@@ -2741,4 +2741,13 @@ height: 22px;
     border-bottom: 1px solid #b6bfc5;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.card_white {
+	margin-right: 17px;
+	margin-left: 17px;
+	margin-bottom: 10px;
+	font-size:18px;
+	color:#000;
+	background-color:#fff;    
 }
