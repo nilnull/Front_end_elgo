@@ -518,7 +518,7 @@ html[xmlns] .clearfix{display: block}
 	color:#343434;
 	background-color:#f2f2f2;
 }
-.card-container{margin-top:6px; padding-left: 30px; padding-bottom: 27px; padding-top: 27px;}
+.card-container{margin-top:6px; padding-left: 30px; padding-bottom: 27px; padding-top: 27px; padding-right: 30px;}
 .card-container--s{padding:10px;}
 .card-bgColor--white{background-color:#fff;}
 .card-bgColor--blue{background-color:#1792e9;}
@@ -2338,7 +2338,7 @@ margin-top:15%;
 }
 
 .space-inner-outer{
-    padding:5px;
+    padding:27px;
     margin: 5px;
 }
 .space-outer {

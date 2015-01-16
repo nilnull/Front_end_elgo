@@ -14,14 +14,14 @@
 		<div class="row subtab-content" id="brandProfile_About" >
 		
 			<div class="col col2">
-				<div class="card card-container  little_seperation space-inner-outer">
+				<div class="card_white card-container  little_seperation ">
                     <p class="bold">About PETRONAS Brands </p>
                     <p class="gray-light-font bitSmallerFont">   
 					   This is an Offical PETRONAS manged page. Founded on 1974. Quisque fermentum 
                         purus diam, id mollis nulla feuget eget. Fusce semper eros dui.
                     </p>
 				</div>
-                <div class="card card-container  little_seperation space-inner-outer">
+                <div class="card_white card-container  little_seperation ">
                     <p class="bold ">Overview </p>
                     <p class="gray-light-font bitSmallerFont">  
                         
@@ -33,7 +33,7 @@
                         
                     </p>
 				</div>
-                <div class="card card-container  little_seperation space-inner-outer">
+                <div class="card_white card-container  little_seperation ">
                     <p class="bold">Tagline </p>
                     <p class="gray-light-font bitSmallerFont">  
                         
@@ -47,7 +47,7 @@
 			</div>
 			
 			<div class="col col2">			
-				<div class="card card-container">
+				<div class="card_white card-container">
 					<p class="bold">PETRONAS's Media Platforms</p>
 					<ul class="no-margin no-padding no-style socials-card">
 						<li class="inline"><a href="#" class="h5 connect-to connect-to__google-plus connect-to--connected brand-social-circle-size"><i class="fa fa-google-plus"></i></a></li>
@@ -58,7 +58,7 @@
 						<li class="inline"><a href="#" class="h5 connect-to connect-to__foursquare connect-to--connected brand-social-circle-size"><i class="fa fa-foursquare"></i></a></li>
 					</ul>
 				</div>
-				<div class="card card-container">
+				<div class="card_white card-container">
 					<p class="bold">Latest Campaign</p>
                     <div class="row latest_campaign_slider">
                         <div class="col center browse-latest-campaign__cursors">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="card card-container card-bgColor--white">
+				<div class="card_white card-container card-bgColor--white">
 					<span class="light">No recent activity</span>
 				</div>
 				
