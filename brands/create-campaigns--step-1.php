@@ -94,8 +94,8 @@
 	
 		<div class="card-container">
 			<span class="bold">Campaign:</span>
-			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active">Create</a>
-			<a href="#" class="inline createCampaign-top-menu">Dashboard</a>
+			<a href="#" class="inline createcampaign-top-menu createcampaign-top-menu--active">Create</a>
+			<a href="#" class="inline createcampaign-top-menu">Dashboard</a>
 		</div>
 		
 		
@@ -104,39 +104,127 @@
 		
 			<div class="col col30">
 			
-				<nav class="createCampaign-left-menu">
+				<!--Left Navigation-->
+				<nav class="createcampaign-left-menu">
 					
-					<div class="createCampaign-left-menu__item js-menu__item">
-						<a href="#step1" class="createCampaign-left-menu__item-link createCampaign-left-menu__item-link--active">
+					<div class="createcampaign-left-menu__item js-menu__item">
+						<a data-href="step1" class="createcampaign-left-menu__item-link createcampaign-left-menu__item-link--active">
 							<h5 class="h6 bold">1. Get Started!</h5>
 						</a>
-						<div class="createCampaign-left-menu__item-desc">
+						<div class="createcampaign-left-menu__item-desc">
 							<span class="block h7">Pick your choice of user endorsement.</span>
 						</div>
 					</div>
 					
-					<div class="createCampaign-left-menu__item js-menu__item">
-						<a href="#step2" class="createCampaign-left-menu__item-link">
-							<h5 class="h6 bold">2. Edit Campaign</h5>
+					<div class="createcampaign-left-menu__item js-menu__item">
+						<a data-href="step2" class="createcampaign-left-menu__item-link">
+							<h5 class="h6 bold">2. Edit Campaign <span class="js-campaigntext"></span></h5>
 						</a>
-						<div class="createCampaign-left-menu__item-desc">
+						<div class="createcampaign-left-menu__item-desc">
 							<span class="block h7">Create a post to be shared by users on their social platforms.</span>
 						</div>
 					</div>
 						
-					<div class="createCampaign-left-menu__item js-menu__item">
-						<a href="#step3" class="createCampaign-left-menu__item-link">
+					<div class="createcampaign-left-menu__item js-menu__item">
+						<a data-href="step3" class="createcampaign-left-menu__item-link">
 							<h5 class="h6 bold">3. Invite Users</h5>
 						</a>
 					</div>
 					
-					<div class="createCampaign-left-menu__item js-menu__item">
-						<a href="#step4" class="createCampaign-left-menu__item-link">
+					<div class="createcampaign-left-menu__item js-menu__item">
+						<a data-href="step4" class="createcampaign-left-menu__item-link">
 							<h5 class="h6 bold">4. Publish Campaign</h5>
 						</a>
 					</div>
 					
 				</nav>
+				
+				
+				<!--Step 2 summary-->
+				<div class="hide js-step" data-step="step2">
+					<div class="createcampaign-summary">
+						<p class="bold h6">Summary</p>
+						<table class="table-responsive no-border summarytable">
+							<thead>
+								<tr>
+									<td>Maximum number of users you can invite is</td>
+									<td>3,300</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Total Budget</td>
+									<td>1,000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="createcampaign-note">
+						<span class="block h6 bold">Note</span>
+						Not enough Credits. Please <a href="#" class="text-color--red underline">top up</a> now.
+					</div>
+					
+					<div class="row" style="margin-right:30px">
+						<div class="float-right">
+							<a href="#" class="underline text-color--red" style="margin-right:10px">Reset </a>
+							<a href="#" class="underline text-color--red" style="margin-right:10px">Preview </a>
+							<input class="btn small btn__bg-color--red" type="submit" value="NEXT">
+						</div>
+					</div>
+				</div>
+				
+				
+				<!--Step 3 summary-->
+				<div class="hide js-step" data-step="step3">
+					
+					<div class="createcampaign-summary">
+						<p class="bold h6">Summary</p>
+						<table class="table-responsive no-border summarytable">
+							<thead>
+								<tr>
+									<td>Maximum number of users you can invite is</td>
+									<td>950/2,000</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Total Budget</td>
+									<td>1,000</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="row">
+							<div class="col col2" style="padding-right:2px;">
+								<label>Group Name</label>
+								<input class="form-field" type="input">
+							</div>
+							<div class="col col2">
+								<label>Number</label>
+								<input class="form-field" type="input">
+							</div>
+						</div>
+					</div>
+					
+					<div class="createcampaign-note">
+						<span class="block h6 bold">Note</span>
+						Not enough Credits. Please <a href="#" class="text-color--red underline">top up</a> now.
+					</div>
+					
+					<div class="row" style="margin-right:30px">
+						<div class="float-right">
+							<a href="#" class="underline text-color--red" style="margin-right:10px">Reset </a>
+							<input class="btn small btn__bg-color--red" type="submit" value="PUBLISH">
+						</div>
+					</div>
+					
+				</div>
+				
+				<!--Dummy summary-->
+				<div class="hide js-step" data-step="step1"></div>
+				<div class="hide js-step" data-step="step4"></div>
+				
+				
 			</div>
 			
 				
@@ -144,12 +232,12 @@
 			<div class="col col70">
 			
 				<!--Step 1-->
-				<div class="hide js-step" id="step1">
+				<div class="js-step" data-step="step1">
 				
 					<div class="col col2">
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row">
-								<img src="../img/brands/create/share.png" class="float-left createCampaign__card-img">
+								<img src="../img/brands/create/share.png" class="float-left createcampaign__card-img">
 								<p class="bold no-margin">Posts</p>
 								<p class="h7">Users share a pre-created post, along with image.</p>
 								<p class="h7">Platforms: 
@@ -165,7 +253,7 @@
 					<div class="col col2">
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row">
-								<img src="../img/brands/create/hashtag.png" class="float-left createCampaign__card-img">
+								<img src="../img/brands/create/hashtag.png" class="float-left createcampaign__card-img">
 								<p class="bold no-margin">Hashtags</p>
 								<p class="h7">Users incorporate your hashtags in their posts.</p>
 								<p class="h7">Platforms: 
@@ -181,8 +269,10 @@
 					<div class="col col2">
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row">						
-								<img src="../img/brands/create/clicks.png" class="float-left createCampaign__card-img">
-								<p class="bold no-margin">Clicks</p>
+								<div class="pointer js-campaignlink" data-campaigntype="Clicks">
+									<img src="../img/brands/create/clicks.png" class="float-left createcampaign__card-img">
+									<p class="bold no-margin">Clicks</p>
+								</div>
 								<p class="h7">Users click on your link, creating more impressions.</p>
 								<p class="h7">Platforms: 
 									<i class="fa fa-facebook social-circle"></i>
@@ -199,7 +289,7 @@
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row">
 								
-								<img src="../img/brands/create/survey.png" class="float-left createCampaign__card-img">
+								<img src="../img/brands/create/survey.png" class="float-left createcampaign__card-img">
 								<p class="bold no-margin">Clicks</p>
 								<p class="h7">Users take a survey, and data is gathered.</p>
 							</div>
@@ -210,13 +300,13 @@
 					
 					<div class="col col2">
 						<div class="card card-bgColor--white">
-							<div class="rel card-container--s row /createCampaign__card--inactive">
+							<div class="rel card-container--s row /createcampaign__card--inactive">
 								
-								<img src="../img/brands/create/check-in.png" class="float-left createCampaign__card-img">
+								<img src="../img/brands/create/check-in.png" class="float-left createcampaign__card-img">
 								<p class="bold no-margin">Check-in</p>
 								<p class="h7">Users mark or 'check-in' their locations based on your link.</p>
 								
-								<div class="hide abs top left createCampaign__card-soon text-center" style="background-color:#7242c3">
+								<div class="hide abs top left createcampaign__card-soon text-center" style="background-color:#7242c3">
 									<div class="table">
 										<div class="table-cell">
 											<span class="h4">Coming Soon</h3>
@@ -230,10 +320,92 @@
 				
 				</div>
 
+				<!--Step 2-->
+				<div class="hide js-step" data-step="step2">
+				
+					<div class="createcampaign-title">Brief</div>
+					<div class="createcampaign-card">
+						<div class="row createcampaign-card-formgroup">
+							<div class="col col2">
+								<label class="createcampaign-card-label">Title</label>
+								<input class="createcampaign-card-input">
+							</div>
+						</div>
+						<div class="row createcampaign-card-formgroup">
+							<div class="col col2">
+								<label class="createcampaign-card-label">Period</label>
+								<div class="createcampaign-card-input">
+									<select class="col col40 createcampaign-card-select">
+										<option>Start</option>
+									</select>
+									<span class="col col20 text-center"> - </span>
+									<select class="col col40 createcampaign-card-select">
+										<option>Start</option>
+									</select>
+								</div>
+							</div>
+							<div class="col col2">
+								<label class="createcampaign-card-label">Budget <img src="../img/e-coin.png"></label>
+								<input class="createcampaign-card-input">
+							</div>
+						</div>
+						<div class="row createcampaign-card-formgroup">
+							<label class="createcampaign-card-label">Title</label>
+							<textarea class="createcampaign-card-input--full no-resize" rows="5"></textarea>
+						</div>
+					</div>
+					
+					<div class="createcampaign-title">Upload</div>
+					<div class="row createcampaign-card">
+						<div class="row createcampaign-card-formgroup">
+							<div class="col col2">
+								<label class="createcampaign-card-label">Coverphoto<br>(750w x 195h)</label>
+								<input type="file">
+							</div>
+							<div class="col col2">
+								<label class="createcampaign-card-label">Thumbnail<br>(560w x 195h)</label>
+								<input type="file">
+							</div>
+						</div>
+					</div>
+					
+					<div class="createcampaign-title">Posts</div>
+					<div class="row createcampaign-card">
+						<div class="row createcampaign-card-formgroup">
+							<div class="col col2">
+								<label class="createcampaign-card-label">Platform</label>
+								<select class="col col40 createcampaign-card-select">
+									<option>Choose Platform</option>
+								</select>
+							</div>
+							<div class="col col2">
+								<label class="createcampaign-card-label">Embed Post link</label>
+								<input class="createcampaign-card-input" placeholder="Paste the link here">
+							</div>
+						</div>
+						<input class="btn small btn__bg-color--red float-right" type="submit" value="ADD">
+					</div>
+					
+					
+					<div class="rel row createcampaign-card" style="margin-top:5px;">
+						<a href="#" class="abs bold" style="top:5px;right:5px">x</a>
+						<div class="row">
+							<div class="col col10"><i class="fa fa-facebook"></i></div>
+							<div class="col col90 ellipsis">
+								https://www.facebook.com/LEGO/photos/a.10150175674793403.303596.6665038402/10152491945198403/
+							</div>
+						</div>
+						<div class="row">
+							<img src="" class="">
+						</div>
+					</div>
+					
+				</div>
+				
 				<!--Step 3-->
-				<div class="js-step" id="step3">
-					<div class="createCampaign-title">Choose the Group to Start Invite Users</div>
-					<div class="row createCampaign-card text-center">
+				<div class="hide js-step" data-step="step3">
+					<div class="createcampaign-title">Choose the Group to Start Invite Users</div>
+					<div class="row createcampaign-card text-center">
 						<div class="float-left">
 							<div class="group-circle bg-color--orange light">
 								<div class="group-circle__item">
@@ -292,10 +464,10 @@
 				</div>
 				
 				<!--Step 4-->
-				<div class="hide js-step" id="step4">
+				<div class="hide js-step" data-step="step4">
 					
-					<div class="createCampaign-title">Your Campaign is Ready to be Published</div>
-					<div class="createCampaign-card">
+					<div class="createcampaign-title">Your Campaign is Ready to be Published</div>
+					<div class="createcampaign-card">
 						<p class="h6">Summary</p>
 						<div class="row">
 							<div class="col col2">
@@ -318,7 +490,7 @@
 						
 						<div class="row">
 							<div class="col col2">
-								<table class="table-responsive createCampaign-table">
+								<table class="table-responsive createcampaign-table">
 									<thead>
 										<tr>
 											<td>Group name</td>
@@ -385,12 +557,20 @@
 	<script>
 		$(document).ready(function(){
 			$('.js-menu__item a').click(function(){
-				var href = $(this).attr('href');
-				$('.js-step' + href).show().siblings().hide();
-				$(this).addClass('createCampaign-left-menu__item-link--active').parents().siblings().children('a').removeClass('createCampaign-left-menu__item-link--active');
+				var href = $(this).data('href');
+				$('.js-step[data-step="'+href+'"]').show().siblings('.js-step').hide();
+				$(this).addClass('createcampaign-left-menu__item-link--active').parents().siblings().children('a').removeClass('createcampaign-left-menu__item-link--active');
 				return false;
 			});
+			
+			$('.js-campaignlink').click(function(){
+				var type = $('.js-campaignlink').data('campaigntype');
+				$('.js-menu__item a').addClass('createcampaign-left-menu__item-link--active').parents().siblings().children('a').removeClass('createcampaign-left-menu__item-link--active');
+				$(this).find('.js-campaigntext').text('(Posts)');
+				return false;
+			})
 		});
+		
 		
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
