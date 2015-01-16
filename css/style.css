@@ -1262,15 +1262,12 @@ html[xmlns] .clearfix{display: block}
 }
 
 
-<<<<<<< HEAD
+
 .createcampaign-top-menu, .top-submenu{
 	padding:10px 15px;
 	margin-left:5px;
 	margin-right:5px;
-=======
-.createCampaign-top-menu, .top-submenu{
 	padding:15px 18px 15px 18px;
->>>>>>> origin/master
 	color:#000;	
 }
 
@@ -1287,15 +1284,7 @@ html[xmlns] .clearfix{display: block}
 
 
 
-<<<<<<< HEAD
-.createcampaign-top-menu:hover, .top-submenu:hover,
-.createcampaign-top-menu--active, .top-submenu--active{
-	background-color:#fff;
-}
 
-.createcampaign__card-img{margin-right:15px;}
-.createcampaign__card-link{
-=======
 .createCampaign-top-menu:hover, .top-submenu:hover,
 .createCampaign-top-menu--active,.createCampaign-top-menu.active, .top-submenu--active,.top-submenu.active{
 	background-color:#fff;
@@ -1305,7 +1294,6 @@ html[xmlns] .clearfix{display: block}
 
 .createCampaign__card-img{margin-right:15px;}
 .createCampaign__card-link{
->>>>>>> origin/master
 	right: 10px;
 	bottom: 13px;
 }
@@ -1335,14 +1323,11 @@ html[xmlns] .clearfix{display: block}
 	margin-right: 30px;
 	margin-bottom: 15px;
 }
-<<<<<<< HEAD
-.createcampaign-left-menu__item-desc,
-.createcampaign-left-menu__item-link{
-=======
+
 .createCampaign-left-menu__item-desc,
 .createCampaign-left-menu__item-link,
 .side-left-menu__item-link{
->>>>>>> origin/master
+
 	display:block;
 	padding-top:18px;
 	padding-bottom:18px;
@@ -1358,16 +1343,12 @@ html[xmlns] .clearfix{display: block}
 	padding-top:8px;
 	min-height:60px;
 }
-<<<<<<< HEAD
-a.createcampaign-left-menu__item-link:hover,
-.createcampaign-left-menu__item-link--active{
-=======
+
 a.createCampaign-left-menu__item-link:hover,
 .createCampaign-left-menu__item-link--active,
 .side-left-menu__item-link.active,
 a.side-left-menu__item-link:hover
 {
->>>>>>> origin/master
 	color:#fff;
 	background-color:#f93349;
 }
