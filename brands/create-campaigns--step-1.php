@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="../css/style2.css?v=1.0" media="all" />
+	<link rel="stylesheet" href="../css/style.css?v=1.0" media="all" />
 	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<style>
 	.card-container--s{min-height:136px}

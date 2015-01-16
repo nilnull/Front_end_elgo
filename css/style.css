@@ -1285,15 +1285,15 @@ html[xmlns] .clearfix{display: block}
 
 
 
-.createCampaign-top-menu:hover, .top-submenu:hover,
-.createCampaign-top-menu--active,.createCampaign-top-menu.active, .top-submenu--active,.top-submenu.active{
+.createcampaign-top-menu:hover, .top-submenu:hover,
+.createcampaign-top-menu--active,.createcampaign-top-menu.active, .top-submenu--active,.top-submenu.active{
 	background-color:#fff;
 }
 
 
 
-.createCampaign__card-img{margin-right:15px;}
-.createCampaign__card-link{
+.createcampaign__card-img{margin-right:15px;}
+.createcampaign__card-link{
 	right: 10px;
 	bottom: 13px;
 }
@@ -1324,8 +1324,8 @@ html[xmlns] .clearfix{display: block}
 	margin-bottom: 15px;
 }
 
-.createCampaign-left-menu__item-desc,
-.createCampaign-left-menu__item-link,
+.createcampaign-left-menu__item-desc,
+.createcampaign-left-menu__item-link,
 .side-left-menu__item-link{
 
 	display:block;
@@ -1344,8 +1344,8 @@ html[xmlns] .clearfix{display: block}
 	min-height:60px;
 }
 
-a.createCampaign-left-menu__item-link:hover,
-.createCampaign-left-menu__item-link--active,
+a.createcampaign-left-menu__item-link:hover,
+.createcampaign-left-menu__item-link--active,
 .side-left-menu__item-link.active,
 a.side-left-menu__item-link:hover
 {

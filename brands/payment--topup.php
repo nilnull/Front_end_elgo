@@ -92,8 +92,8 @@
 	
 		<div class="card-container">
 			<span class="bold">Payments:</span>
-			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active">Top Up</a>
-			<a href="#" class="inline createCampaign-top-menu">Add</a>
+			<a href="#" class="inline createcampaign-top-menu createcampaign-top-menu--active">Top Up</a>
+			<a href="#" class="inline createcampaign-top-menu">Add</a>
 			
 			<div class="row">
 				<table width="100%" class="table-paymentsTopup">
