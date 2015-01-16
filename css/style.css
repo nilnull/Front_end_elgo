@@ -521,9 +521,9 @@ html[xmlns] .clearfix{display: block}
 	margin-bottom: 10px;
 	font-size:18px;
 	color:#343434;
-	background-color:#f2f2f2;
+	background-color:#dcdddf;
 }
-.card-container{margin-top:6px; padding-left: 30px; padding-bottom: 27px; padding-top: 27px; padding-right: 30px;}
+.card-container{margin-top:6px; padding-left: 20px; padding-bottom: 27px; padding-top: 27px; padding-right: 20px;}
 .card-container--s{padding:10px;}
 .card-bgColor--white{background-color:#fff;}
 .card-bgColor--blue{background-color:#1792e9;}
@@ -2107,11 +2107,18 @@ select.brandSettings__form--select{
     width: 100%;
     height: 192px;
 }
+.latest_campaign_slider .Campaign-card-cover {
+    width: 100%;
+    height: 159px;
+}
 
 .campaign-card {
-    margin: 21px;
+    margin: 15px;
     background-color: white;
     color: black;
+}
+.latest_campaign_slider .campaign-card{
+    width:460px;
 }
 
 .Campaign-card-type {
@@ -2120,14 +2127,28 @@ select.brandSettings__form--select{
     padding-right: 14px;
     padding-left: 14px;
 }
+.latest_campaign_slider  .Campaign-card-type {
+    padding-top: 14px;
+    height:42px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
 
 .Campaign-card-action {
     height: 50px;
     min-width: 95px;
 }
+.latest_campaign_slider .Campaign-card-action {
+    height: 42px;
+    min-width: 95px;
+}
 
 .Campaign-card-title {
     height: 54px;
+}
+.latest_campaign_slider .Campaign-card-title {
+    height: 44px;
+    
 }
 
 .next-cursor {
@@ -2139,8 +2160,10 @@ select.brandSettings__form--select{
     right:10px;
     padding:4px;
     padding-right:4px;
-    
     cursor: alias;
+}
+.latest_campaign_slider .Campaign-card-more-cursore {
+    top:14px;
 }
 .Campaign-card-more-cursore:hover {
 color:#000;
@@ -2148,13 +2171,11 @@ color:#000;
 
 .browse-latest-campaign__cursors {
 color:#f93349;
-margin-top:15%;
-    padding-left: 10px;
-    padding-right: 10px;
+margin-top:120px;
 }
 
 .latest_campaign_slider {
-    margin-left: 5%;
+    
 }
 
 .campaign_card_withAnalysis {
@@ -2475,10 +2496,19 @@ margin-top: 15px;
    height: 74px;
     padding-top: 12px;
 }
+.latest_campaign_slider .campaing-card-bottombar {
+   height: 59px;
+    padding-top: 9px;
+}
 
 .Campaign-card-camp-name {
     top:20px;
     left:17px;
+}
+.latest_campaign_slider .Campaign-card-camp-name {
+    top:12px;
+    left:17px;
+    padding-top: 0px;
 }
 
 .campaing-card-brand-avatar {
@@ -2813,4 +2843,11 @@ height: 22px;
 	font-size:18px;
 	color:#000;
 	background-color:#fff;    
+}
+
+
+
+.brand-profile .left-panel .card-container {
+    margin-top: 1px;
+    margin-bottom: 0px;
 }
