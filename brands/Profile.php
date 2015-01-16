@@ -12,14 +12,15 @@
 <!--Content-->
 	<section id="tabs-1" class="wrap mainBody-container brand-profile">
 	
-		<div class="card-container ">
-                <span class="bold profile_submenu">Profile :</span>
-            <ul class="subtabs-menu profile_submenu">
-                <li class="inline top-submenu--active"><a href="#brandProfile_About" class="inline top-submenu ">About</a></li>
-                <li class="inline"><a href="#brandProfile_edit" class="inline top-submenu">Edit</a></li>
-            </ul>
-		</div>
-		<div class="row subtab-content" id="brandProfile_About" >
+        <div class="top-submenu-bar">
+            <div class="sub-menu inline"> 
+                <p class="bold inline submenu-title">Campaigns:</p>
+                <div class="js-custom_menu__item inline " ><a href="#brandProfile_About" data-level="one" class=" top-submenu active">About</a></div>
+                <div class="js-custom_menu__item inline " ><a href="#brandProfile_edit" data-level="one" class=" top-submenu">Edit</a></div>
+            </div>
+        </div>
+        
+		<div class="row subtab-content  profile-content level-one-tab" id="brandProfile_About" >
 		
 			<div class="col col2 left-panel">
 				<div class="card_white card-container  little_seperation ">
@@ -104,7 +105,7 @@
 			</div>
 		
 		</div>
-		<div class="row subtab-content" id="brandProfile_edit" style="display:none;">
+		<div class="row subtab-content profile-content level-one-tab" id="brandProfile_edit" style="display:none;">
             <div class="col col3">
 				<div class="rel card-border"  id="personal-info">
 					<div class="row form-group">
