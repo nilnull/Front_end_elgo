@@ -98,6 +98,10 @@
     
 <?php
 //just for tests
+$brand_photos=array(
+    'http://eil.com/images/main/Gnarls-Barkley-Crazy-354180.jpg',
+    'http://eil.com/images/main/Gnarls-Barkley-Crazy-354180.jpg'
+);
 $people_photos=array(
     'http://eil.com/images/main/Gnarls-Barkley-Crazy-354180.jpg',
     'http://www.sohh.com/wp-content/uploads/2014/06/eminem-2012-07-05-300x3003.png',
@@ -106,6 +110,9 @@ $people_photos=array(
     'http://news.bbcimg.co.uk/media/images/69247000/jpg/_69247083_einsteingettyafp.jpg',
     'http://www.dazzlingwallpaper.com/image/1359119289_angelina_jolie_famous_face_of_hollywood.jpg'
 );
+$brand_names=array('Lego',
+                    'Petronas'
+                   );
 $people_names=array('Gnarls Barkley',
        'Marshal Mather',
        'alec baldwin',

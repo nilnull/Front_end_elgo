@@ -237,3 +237,53 @@
 	
 	
 </div>
+
+
+<!--Message popup-->
+<div id="js-new-msg--brand" class="text-center new-msg--brand--popup bg-color--white" style="display:none;height:422px;">
+
+
+	<div class="popup-header bg-color--grey--lightest">
+
+        <span class="h9 float-left inline label-user text-color--grey--darker">Users</span>
+<!--                    only for brand-->
+        <div class="float-right inline ">
+            <a href="messaging.php" class="float-right inline h9">
+            <input type="submit" class="float-right h9 inline new_msg btn   bg-color--grey--darker " value="All Messages">
+            </a>
+        </div>
+        
+	</div>	
+	
+	<div class="popup-msg-body msg-body" style="">
+        <div class="message_start_date float-left block h9 light text-color--grey--lighter" >
+            conversation started at 1 Jan 2015, 5:45pm
+        </div>
+		<div class="message ">
+            <div class="user-msg-photo inline rel float-left">
+                <img src="<?=$brand_photos[0]?>" class="circle user-avatar--header">
+            </div>
+            <div class="user-msg-info inline ">
+                <div class="row   block msg-info ">  
+                    <span class="inline h7 bold float-left bold">
+                        <?=$brand_names[0]?>
+                    </span>
+                    <span class="h9 light inline float-right text-color--grey--lighter">
+                        1 Jan 2015, 5:45pm
+                    </span>
+                </div>
+                <div class="row h7 light msg-text ">
+                    bluasdj kjasdnkamsd ajs njasd jaksld askldja sdklasjd kasdj askdj lasj kl jaskl 
+                </div>
+            </div>
+        </div>
+        
+	</div>
+    <div class="popup-msg-footer ">
+        <input type="text" class="float-right inline bg-color--white text-color--grey--lighter" placeholder="Add a new message">
+    </div>
+	
+	
+	
+</div>
+	
