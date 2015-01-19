@@ -96,7 +96,7 @@ html[xmlns] .clearfix{display: block}
 .rel{position:relative}
 .fix{position:fixed}
 .top{top:0}
-.right{left:0px;}
+.right{right:0px;}
 .bottom{bottom:0}
 .left{left:0}
 .v-middle{vertical-align: middle}
@@ -242,7 +242,7 @@ html[xmlns] .clearfix{display: block}
 */
 
 .text-color--white{color:#fff}
-.text-color--black{color:#fff}
+.text-color--black{color:#000}
 .text-color--red{color:#ff004e}
 .text-color--blue{color:#1792e9}
 .text-color--body{color:#e5e5e5}
@@ -1029,6 +1029,7 @@ html[xmlns] .clearfix{display: block}
 	box-shadow: 0 0 6px #000;
     margin-left: 10px;
     margin-bottom: 10px;
+    opacity: 0.86;
 }
 .profile__cover-avatar--small{
 	width: 60px;
@@ -1471,13 +1472,20 @@ a.side-left-menu__item-link:hover
 	padding-bottom:10px;
 	padding-right:20px;
 	padding-left:20px;
-	color:#343434;
+    color:#dcdddf;
 	font-size: 16px;
 	border-bottom:5px solid transparent;
 }
+
+.tabs-menu .current a{
+    color:#343434;
+    border-bottom:5px solid #f93349;
+}
+
 .user-nav__item:hover,
 .user-nav__item--active{
 	border-bottom:5px solid #f93349;
+    color: #b6bfc5;
 }
 .user-nav__fa-gear{
 	font-size:24px;
@@ -2854,4 +2862,38 @@ height: 22px;
 
 .profile-content {
     margin-top: 22px;
+}
+
+
+
+.profile__cover-interact {
+    color:white;
+    z-index: 90000;
+    
+    height: 70px;
+    padding: 4px;
+    bottom: 0px;
+    top:30px;
+    align-items: right;
+}
+
+.profile__cover-interact .icon {
+    margin-right: 4px;
+    margin-left: 4px;
+    width: 47px;
+    height: 47px;
+    text-align: center;
+    padding-top: 12px;
+    color:#b6bfc5;
+    opacity: 1
+}
+.profile__cover-interact .icon:hover { color: red;}
+
+.icon .msg-count {
+    position: absolute;
+    top: 38px;
+    width:14px;
+    height:14px;
+    left: 40px;
+    border-radius: 5px;
 }

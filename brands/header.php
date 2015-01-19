@@ -78,7 +78,12 @@
 				</ul>
 			</div>
 		</div>
-		
+		<div class="profile__cover-interact rel float-right text-color--black h6 right">
+            
+                <a href="#"><div class="col  icon circle bg-color--white center"><span class="fa fa-envelope"></span><div class="msg-count  rel bg-color--red text-color--white h10">2</div></div></a>
+                
+            
+        </div>
 	</section>
 	
 	
@@ -86,10 +91,10 @@
 	
 	<!--Individu Navigation-->
 	<section class="wrap text-center">
-		<ul class="bg-color--white no-style no-margin no-padding">
-			<li class="inline"><a href="#" class="user-nav__item bold">Profile</a></li>
+		<ul class="bg-color--white no-style no-margin no-padding tabs-menu">
+			<li class="inline current"><a href="#" class="user-nav__item bold">Profile</a></li>
 			<li class="inline"><a href="#" class="user-nav__item bold">Create Campaigns</a></li>
-			<li class="inline"><a href="#" class="user-nav__item user-nav__item--active bold">Users Insigths</a></li>
+			<li class="inline "><a href="#" class="user-nav__item  bold">Users Insigths</a></li>
 			<li class="inline"><a href="#" class="user-nav__item bold">Notifications</a></li>
 			<li class="inline"><a href="#"><i class="fa fa-gear user-nav__fa-gear"></i></a></li>
 		</ul>
