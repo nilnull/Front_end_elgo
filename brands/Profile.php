@@ -59,12 +59,12 @@
 				<div class="card_white card-container">
 					<p class="bold">PETRONAS's Media Platforms</p>
 					<ul class="no-margin no-padding no-style socials-card">
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__google-plus connect-to--connected brand-social-circle-size"><i class="fa fa-google-plus"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__twitter connect-to--connected brand-social-circle-size"><i class="fa fa-twitter"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__instagram connect-to--connected brand-social-circle-size"><i class="fa fa-instagram"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__linkedin connect-to--connected brand-social-circle-size"><i class="fa fa-linkedin-square"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__youtube brand-social-circle-size"><i class="fa fa-youtube "></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__foursquare connect-to--connected brand-social-circle-size"><i class="fa fa-foursquare"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__google-plus connect-to--connected brand-social-circle-size"><i class="fa fa-google-plus"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__twitter connect-to--connected brand-social-circle-size"><i class="fa fa-twitter"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__instagram connect-to--connected brand-social-circle-size"><i class="fa fa-instagram"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__linkedin connect-to--connected brand-social-circle-size"><i class="fa fa-linkedin-square"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__youtube brand-social-circle-size"><i class="fa fa-youtube "></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__foursquare connect-to--connected brand-social-circle-size"><i class="fa fa-foursquare"></i></a></li>
 					</ul>
 				</div>
 				<div class="card card-container ">
@@ -327,12 +327,12 @@
 						</div>
                         <div class="row form-group">
                             <ul class="no-margin no-padding no-style socials-card">
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__google-plus connect-to--connected "><i class="fa fa-google-plus"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__twitter connect-to--connected "><i class="fa fa-twitter"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__instagram connect-to--connected "><i class="fa fa-instagram"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__linkedin connect-to--connected "><i class="fa fa-linkedin-square"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__youtube "><i class="fa fa-youtube "></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__foursquare connect-to--connected "><i class="fa fa-foursquare"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__google-plus connect-to--connected "><i class="fa fa-google-plus"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__twitter connect-to--connected "><i class="fa fa-twitter"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__instagram connect-to--connected "><i class="fa fa-instagram"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__linkedin connect-to--connected "><i class="fa fa-linkedin-square"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__youtube "><i class="fa fa-youtube "></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__foursquare connect-to--connected "><i class="fa fa-foursquare"></i></a></li>
                             </ul>
 					   </div>
 						

@@ -2894,3 +2894,20 @@ height: 22px;
     left: 40px;
     border-radius: 5px;
 }
+
+.add_payment_cred {
+    padding-top: 68px;
+    padding-left:  40%;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.add_payment_cred.form {
+    padding-left: 38%;
+}
+
+
+
+.transaction_related_btn {
+    margin-right: 6px;
+}
