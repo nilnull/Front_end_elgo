@@ -8,7 +8,7 @@
 </script>
 	
 	
-	<!--Profile-->
+	<!--settings-->
 	<section class="wrap mainBody-container">	
 		<div class="row">			
 			<div class="card-container card-title">
