@@ -2076,6 +2076,7 @@ textarea.profile-form__field {
 	font-size: 16px;
 	font-weight: 500;
 	color: #717e85;
+    vertical-align: middle;
 }
 .brandSettings__form--checkboxLabel{
 	display:block;
@@ -2910,4 +2911,56 @@ height: 22px;
 
 .transaction_related_btn {
     margin-right: 6px;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox {
+    width:71px;
+    height:28px;
+    overflow-x: hidden;
+    margin-right: 5px;
+}
+
+.custom-checkbox .lbl-text {
+    height:27px;
+    padding-top: 5px;
+    
+    margin-left: 9px;
+    margin-right: 9px;
+    color: white;
+}
+
+.custom-checkbox .toggle {
+ width:24px;
+ height: 24px;
+ margin-top: 2px;
+ margin-left: 4px;
+ margin-right: 3px;
+ overflow-x: hidden;
+}
+
+.custom-checkbox .decoration {
+    height:28px;
+padding-top: 0px;  
+    overflow-x: hidden;
+}
+
+.custom-checkbox .decoration.actived {
+    background-color:#e7304d;
+    margin-left:0px;
+}
+.custom-checkbox .decoration.disabled {
+    background-color:#ccc;
+    margin-left:-37px;
+}
+
+
+
+.circular-checkbox {
+    border-radius: 50%;
+    margin-right: 5px;
+    
 }
