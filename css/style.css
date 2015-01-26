@@ -2964,3 +2964,10 @@ padding-top: 0px;
     margin-right: 5px;
     
 }
+
+.messaging-display-form  .users-list {
+    overflow-y: scroll;
+    height: 451px;
+}
+
+
