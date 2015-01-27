@@ -2971,3 +2971,27 @@ padding-top: 0px;
 }
 
 
+
+.popup-camp-header {
+    height:54px;
+}
+
+.popup-camp-body {
+    overflow-y: scroll;
+}
+
+.popup-camp-body .static-part {
+    min-height: 450px;
+    border: 1px solid black;
+}
+
+.popup-camp-body .dynamic-part {
+    min-height: 255px;
+    border:1px solid black;
+}
+
+.popup-camp-footer {
+    height:43px;
+}
+
+
