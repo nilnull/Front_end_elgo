@@ -1,19 +1,28 @@
 <!--Header-->
 	<?php include 'header.php';?>
 
+<script>
+    $(document).ready(function(even){
+        $('.latest_next-campaign').click(function(){
+            alert('next');
+        });
+    });
+</script>
+        
 <!--Content-->
-	<section id="tabs-1" class="wrap mainBody-container">
+	<section id="tabs-1" class="wrap mainBody-container brand-profile">
 	
-		<div class="card-container ">
-                <span class="bold profile_submenu">Profile :</span>
-            <ul class="subtabs-menu profile_submenu">
-                <li class="inline top-submenu--active"><a href="#brandProfile_About" class="inline top-submenu ">About</a></li>
-                <li class="inline"><a href="#brandProfile_edit" class="inline top-submenu">Edit</a></li>
-            </ul>
-		</div>
-		<div class="row subtab-content" id="brandProfile_About" >
+        <div class="top-submenu-bar">
+            <div class="sub-menu inline"> 
+                <p class="bold inline submenu-title">Campaigns:</p>
+                <div class="js-custom_menu__item inline " ><a href="#brandProfile_About" data-level="one" class=" top-submenu active">About</a></div>
+                <div class="js-custom_menu__item inline " ><a href="#brandProfile_edit" data-level="one" class=" top-submenu">Edit</a></div>
+            </div>
+        </div>
+        
+		<div class="row subtab-content  profile-content level-one-tab" id="brandProfile_About" >
 		
-			<div class="col col2">
+			<div class="col col2 left-panel">
 				<div class="card_white card-container  little_seperation ">
                     <p class="bold">About PETRONAS Brands </p>
                     <p class="gray-light-font bitSmallerFont">   
@@ -50,36 +59,41 @@
 				<div class="card_white card-container">
 					<p class="bold">PETRONAS's Media Platforms</p>
 					<ul class="no-margin no-padding no-style socials-card">
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__google-plus connect-to--connected brand-social-circle-size"><i class="fa fa-google-plus"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__twitter connect-to--connected brand-social-circle-size"><i class="fa fa-twitter"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__instagram connect-to--connected brand-social-circle-size"><i class="fa fa-instagram"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__linkedin connect-to--connected brand-social-circle-size"><i class="fa fa-linkedin-square"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__youtube brand-social-circle-size"><i class="fa fa-youtube "></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__foursquare connect-to--connected brand-social-circle-size"><i class="fa fa-foursquare"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__google-plus connect-to--connected brand-social-circle-size"><i class="fa fa-google-plus"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__twitter connect-to--connected brand-social-circle-size"><i class="fa fa-twitter"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__instagram connect-to--connected brand-social-circle-size"><i class="fa fa-instagram"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__linkedin connect-to--connected brand-social-circle-size"><i class="fa fa-linkedin-square"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__youtube brand-social-circle-size"><i class="fa fa-youtube "></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__foursquare connect-to--connected brand-social-circle-size"><i class="fa fa-foursquare"></i></a></li>
 					</ul>
 				</div>
-				<div class="card_white card-container">
+				<div class="card card-container ">
 					<p class="bold">Latest Campaign</p>
-                    <div class="row latest_campaign_slider">
-                        <div class="col center browse-latest-campaign__cursors">
+                    <div class="row latest_campaign_slider inline">
+                      
+                        <div class="col center browse-latest-campaign__cursors latest_next-campaign float-left">
                             <span class="float-left h5 fa fa-chevron-left " ></span>
                         </div>
-                        <div class="col col1-25">
-                            <div class="campaign-card">
-                                <div class="row Campaign-card-title">
-                                    <span class="h6 rel left">#CampaignHashtag </span>
-                                    <span class="float-right h7 fa fa-chevron-right Campaign-card-more-cursore" ></span>
-                                </div>
-                                <div class="">
-                                    <img src="../img/individual/sample_cover_photo.jpg" class="Campaign-card-cover">
-                                </div>
-                                <div class="row">
-                                    <div class="float-right  inline"><input class="btn small btn-bottom btn__bg-color--red no-transition right Campaign-card-action" type="submit" value="APPLY"></div>
-                                    <div class="float-right Campaign-card-type inline"><span class="Bold h6 black">HASHTAG</span></div>
+                        
+                        <div class="col campaign-card text-color--grey--light inline float-right">
+                            <div class="row Campaign-card-title">
+                                <span class="h7 rel left Campaign-card-camp-name">#CampaignHashtag </span>
+                                <span class="rel float-right h7 fa fa-chevron-right text-color--grey  Campaign-card-more-cursore" ></span>
+                            </div>
+                            <div class="">
+                                <img src="../img/individual/sample_cover_photo.jpg" class="Campaign-card-cover">
+                            </div>
+                            <div class="row campaing-card-bottombar">
+
+                                <div class="float-right">
+                                    <div class="float-right  inline Campaign-card-action"><input class="btn  btn-bottom btn__bg-color--red h9 no-transition right inline " type="submit" value="APPLY"></div>
+                                    <div class="float-right  Campaign-card-type inline text-color--grey--darker"><span class="bold h6 black">HASHTAG</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col center browse-latest-campaign__cursors">
+                        
+                        
+                        <div class="col center browse-latest-campaign__cursors latest_prev-campaign inline float-right">
                             <span class="float-right h5 fa fa-chevron-right  " ></span>
                         </div>
                     </div>
@@ -91,7 +105,7 @@
 			</div>
 		
 		</div>
-		<div class="row subtab-content" id="brandProfile_edit" style="display:none;">
+		<div class="row subtab-content profile-content level-one-tab" id="brandProfile_edit" style="display:none;">
             <div class="col col3">
 				<div class="rel card-border"  id="personal-info">
 					<div class="row form-group">
@@ -313,12 +327,12 @@
 						</div>
                         <div class="row form-group">
                             <ul class="no-margin no-padding no-style socials-card">
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__google-plus connect-to--connected "><i class="fa fa-google-plus"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__twitter connect-to--connected "><i class="fa fa-twitter"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__instagram connect-to--connected "><i class="fa fa-instagram"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__linkedin connect-to--connected "><i class="fa fa-linkedin-square"></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__youtube "><i class="fa fa-youtube "></i></a></li>
-                                <li class="inline"><a href="#" class="h5 connect-to connect-to__foursquare connect-to--connected "><i class="fa fa-foursquare"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__google-plus connect-to--connected "><i class="fa fa-google-plus"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__twitter connect-to--connected "><i class="fa fa-twitter"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__instagram connect-to--connected "><i class="fa fa-instagram"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__linkedin connect-to--connected "><i class="fa fa-linkedin-square"></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__youtube "><i class="fa fa-youtube "></i></a></li>
+                                <li class="inline"><a href="#" class="h2 connect-to connect-to__foursquare connect-to--connected "><i class="fa fa-foursquare"></i></a></li>
                             </ul>
 					   </div>
 						

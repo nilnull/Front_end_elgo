@@ -5,8 +5,16 @@
 	
 	<!--Profile-->
 	<section class="wrap mainBody-container">	
-		<div class="row">
-		
+        <div class="top-submenu-bar">
+            <div class="sub-menu inline"> 
+                <p class="bold inline submenu-title">Campaigns:</p>
+                <div class="js-custom_menu__item inline " ><a href="#IndivProfile_About" data-level="one" class=" top-submenu active">About</a></div>
+                <div class="js-custom_menu__item inline " ><a href="#IndivProfile_edit" data-level="one" class=" top-submenu">Edit</a></div>
+            </div>
+        </div>
+        
+		<div class="row subtab-content  profile-content level-one-tab" id="IndivProfile_About" >
+        
 			<div class="col col2">
 			
 				<div class="card card-container card-bgColor--blue text-color--white">
@@ -70,12 +78,12 @@
 				<div class="card_white card-container">
 					<p class="bold">Your Social Media Platforms</p>
 					<ul class="no-margin no-padding no-style">
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__google-plus connect-to--connected"><i class="fa fa-google-plus"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__twitter connect-to--connected"><i class="fa fa-twitter"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__instagram connect-to--connected"><i class="fa fa-instagram"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__linkedin connect-to--connected"><i class="fa fa-linkedin-square"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__youtube"><i class="fa fa-youtube"></i></a></li>
-						<li class="inline"><a href="#" class="h5 connect-to connect-to__foursquare connect-to--connected"><i class="fa fa-foursquare"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__google-plus connect-to--connected"><i class="fa fa-google-plus"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__twitter connect-to--connected"><i class="fa fa-twitter"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__instagram connect-to--connected"><i class="fa fa-instagram"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__linkedin connect-to--connected"><i class="fa fa-linkedin-square"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__youtube"><i class="fa fa-youtube"></i></a></li>
+						<li class="inline"><a href="#" class="h2 connect-to connect-to__foursquare connect-to--connected"><i class="fa fa-foursquare"></i></a></li>
 					</ul>
 				</div>
 				

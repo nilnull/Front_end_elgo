@@ -231,7 +231,7 @@ $(document).ready(function(){
     $(".tabs-menu a").click(function(event) {
         event.preventDefault();
         $(this).parent().addClass("current");
-        
+
         $(this).parent().siblings().removeClass("current");
         var tab = $(this).attr("href");
         $(".tab-content").not(tab).css("display", "none");
@@ -263,8 +263,16 @@ $(document).ready(function(){
                 $(href).show();
 				return false;
 			});
+    
+    //messaging 
+    $('.messaging-display-form .users-list .user').click(function(event){
+        event.preventDefault();
+        $(this).parent().find('.user').removeClass('active');
+        $(this).addClass('active');
+    });
+    
 });
-
+//end of doc.ready
 
 // Function
 
@@ -279,4 +287,3 @@ function close_popup(){
 function change_selection_first_color(a){
   a.style.color = "#000";              
 }
-

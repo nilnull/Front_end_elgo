@@ -91,8 +91,8 @@
 	
 		<div class="card-container">
 			<span class="bold">Campaign:</span>
-			<a href="#" class="inline createCampaign-top-menu">Top Up</a>
-			<a href="#" class="inline createCampaign-top-menu createCampaign-top-menu--active">Add</a>
+			<a href="payment--topup.php" class="inline createcampaign-top-menu">Top Up</a>
+			<a href="#" class="inline createcampaign-top-menu createcampaign-top-menu--active">Add</a>
 		</div>
 		
 		

@@ -96,7 +96,7 @@ html[xmlns] .clearfix{display: block}
 .rel{position:relative}
 .fix{position:fixed}
 .top{top:0}
-.right{left:0px;}
+.right{right:0px;}
 .bottom{bottom:0}
 .left{left:0}
 .v-middle{vertical-align: middle}
@@ -242,7 +242,7 @@ html[xmlns] .clearfix{display: block}
 */
 
 .text-color--white{color:#fff}
-.text-color--black{color:#fff}
+.text-color--black{color:#000}
 .text-color--red{color:#ff004e}
 .text-color--blue{color:#1792e9}
 .text-color--body{color:#e5e5e5}
@@ -521,9 +521,10 @@ html[xmlns] .clearfix{display: block}
 	margin-bottom: 10px;
 	font-size:18px;
 	color:#343434;
-	background-color:#f2f2f2;
+	background-color:#dcdddf;
 }
-.card-container{margin-top:6px; padding-left: 30px; padding-bottom: 27px; padding-top: 27px;}
+.card-container{margin-top:6px; padding-left: 20px; padding-bottom: 27px; padding-top: 27px; padding-right: 20px;}
+
 .card-container--s{padding:10px;}
 .card-bgColor--white{background-color:#fff;}
 .card-bgColor--blue{background-color:#1792e9;}
@@ -919,12 +920,13 @@ html[xmlns] .clearfix{display: block}
 .connect-to,
 .social-circle{
 	position:relative;
-	padding-top: 9px;
+	padding-top: 16px;
+    text-align: center;
 	display:block;		
 	margin-bottom: 8px;
 	margin-right: 8px;
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
 	color:#fff;
 	text-align: center;
 	background-color:#c0c0c0;
@@ -975,10 +977,6 @@ html[xmlns] .clearfix{display: block}
 	height:20px;
 	font-size: 12px;
 	font-family: FontAwesome;
-	content:"\f00c";
-	background-color:#00c153;
-	border:1px solid #fff;
-	border-radius:50%;
 }
 
 
@@ -1029,6 +1027,7 @@ html[xmlns] .clearfix{display: block}
 	box-shadow: 0 0 6px #000;
     margin-left: 10px;
     margin-bottom: 10px;
+    opacity: 0.86;
 }
 .profile__cover-avatar--small{
 	width: 60px;
@@ -1263,15 +1262,10 @@ html[xmlns] .clearfix{display: block}
 }
 
 
-<<<<<<< HEAD
-.createcampaign-top-menu, .top-submenu{
-	padding:10px 15px;
-	margin-left:5px;
-	margin-right:5px;
-=======
+
+
 .createCampaign-top-menu, .top-submenu{
 	padding:15px 18px 15px 18px;
->>>>>>> origin/master
 	color:#000;	
 }
 
@@ -1288,25 +1282,23 @@ html[xmlns] .clearfix{display: block}
 
 
 
-<<<<<<< HEAD
+
 .createcampaign-top-menu:hover, .top-submenu:hover,
 .createcampaign-top-menu--active, .top-submenu--active{
 	background-color:#fff;
 }
 
-.createcampaign__card-img{margin-right:15px;}
-.createcampaign__card-link{
-=======
-.createCampaign-top-menu:hover, .top-submenu:hover,
-.createCampaign-top-menu--active,.createCampaign-top-menu.active, .top-submenu--active,.top-submenu.active{
+.createcampaign-top-menu:hover, .top-submenu:hover,
+.createcampaign-top-menu--active,.createcampaign-top-menu.active, .top-submenu--active,.top-submenu.active{
+
 	background-color:#fff;
 }
 
 
 
-.createCampaign__card-img{margin-right:15px;}
-.createCampaign__card-link{
->>>>>>> origin/master
+
+.createcampaign__card-img{margin-right:15px;}
+.createcampaign__card-link{
 	right: 10px;
 	bottom: 13px;
 }
@@ -1336,14 +1328,11 @@ html[xmlns] .clearfix{display: block}
 	margin-right: 30px;
 	margin-bottom: 15px;
 }
-<<<<<<< HEAD
+
+
 .createcampaign-left-menu__item-desc,
-.createcampaign-left-menu__item-link{
-=======
-.createCampaign-left-menu__item-desc,
-.createCampaign-left-menu__item-link,
+.createcampaign-left-menu__item-link,
 .side-left-menu__item-link{
->>>>>>> origin/master
 	display:block;
 	padding-top:18px;
 	padding-bottom:18px;
@@ -1359,16 +1348,13 @@ html[xmlns] .clearfix{display: block}
 	padding-top:8px;
 	min-height:60px;
 }
-<<<<<<< HEAD
+
 a.createcampaign-left-menu__item-link:hover,
-.createcampaign-left-menu__item-link--active{
-=======
-a.createCampaign-left-menu__item-link:hover,
-.createCampaign-left-menu__item-link--active,
+.createcampaign-left-menu__item-link--active,
 .side-left-menu__item-link.active,
 a.side-left-menu__item-link:hover
 {
->>>>>>> origin/master
+
 	color:#fff;
 	background-color:#f93349;
 }
@@ -1491,13 +1477,20 @@ a.side-left-menu__item-link:hover
 	padding-bottom:10px;
 	padding-right:20px;
 	padding-left:20px;
-	color:#343434;
+    color:#dcdddf;
 	font-size: 16px;
 	border-bottom:5px solid transparent;
 }
+
+.tabs-menu .current a{
+    color:#343434;
+    border-bottom:5px solid #f93349;
+}
+
 .user-nav__item:hover,
 .user-nav__item--active{
 	border-bottom:5px solid #f93349;
+    color: #b6bfc5;
 }
 .user-nav__fa-gear{
 	font-size:24px;
@@ -2091,6 +2084,7 @@ textarea.profile-form__field {
 	font-size: 16px;
 	font-weight: 500;
 	color: #717e85;
+    vertical-align: middle;
 }
 .brandSettings__form--checkboxLabel{
 	display:block;
@@ -2127,11 +2121,18 @@ select.brandSettings__form--select{
     width: 100%;
     height: 192px;
 }
+.latest_campaign_slider .Campaign-card-cover {
+    width: 100%;
+    height: 159px;
+}
 
 .campaign-card {
-    margin: 21px;
+    margin: 15px;
     background-color: white;
     color: black;
+}
+.latest_campaign_slider .campaign-card{
+    width:460px;
 }
 
 .Campaign-card-type {
@@ -2140,14 +2141,28 @@ select.brandSettings__form--select{
     padding-right: 14px;
     padding-left: 14px;
 }
+.latest_campaign_slider  .Campaign-card-type {
+    padding-top: 14px;
+    height:42px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
 
 .Campaign-card-action {
     height: 50px;
     min-width: 95px;
 }
+.latest_campaign_slider .Campaign-card-action {
+    height: 42px;
+    min-width: 95px;
+}
 
 .Campaign-card-title {
     height: 54px;
+}
+.latest_campaign_slider .Campaign-card-title {
+    height: 44px;
+    
 }
 
 .next-cursor {
@@ -2159,8 +2174,10 @@ select.brandSettings__form--select{
     right:10px;
     padding:4px;
     padding-right:4px;
-    
     cursor: alias;
+}
+.latest_campaign_slider .Campaign-card-more-cursore {
+    top:14px;
 }
 .Campaign-card-more-cursore:hover {
 color:#000;
@@ -2168,13 +2185,11 @@ color:#000;
 
 .browse-latest-campaign__cursors {
 color:#f93349;
-margin-top:15%;
-    padding-left: 10px;
-    padding-right: 10px;
+margin-top:120px;
 }
 
 .latest_campaign_slider {
-    margin-left: 5%;
+    
 }
 
 .campaign_card_withAnalysis {
@@ -2495,10 +2510,19 @@ margin-top: 15px;
    height: 74px;
     padding-top: 12px;
 }
+.latest_campaign_slider .campaing-card-bottombar {
+   height: 59px;
+    padding-top: 9px;
+}
 
 .Campaign-card-camp-name {
     top:20px;
     left:17px;
+}
+.latest_campaign_slider .Campaign-card-camp-name {
+    top:12px;
+    left:17px;
+    padding-top: 0px;
 }
 
 .campaing-card-brand-avatar {
@@ -2834,3 +2858,148 @@ height: 22px;
 	color:#000;
 	background-color:#fff;    
 }
+
+
+
+.brand-profile .left-panel .card-container {
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+.profile-content {
+    margin-top: 22px;
+}
+
+
+
+.profile__cover-interact {
+    color:white;
+    z-index: 90000;
+    
+    height: 70px;
+    padding: 4px;
+    bottom: 0px;
+    top:30px;
+    align-items: right;
+}
+
+.profile__cover-interact .icon {
+    margin-right: 4px;
+    margin-left: 4px;
+    width: 47px;
+    height: 47px;
+    text-align: center;
+    padding-top: 12px;
+    color:#b6bfc5;
+    opacity: 1
+}
+.profile__cover-interact .icon:hover { color: red;}
+
+.icon .msg-count {
+    position: absolute;
+    top: 38px;
+    width:14px;
+    height:14px;
+    left: 40px;
+    border-radius: 5px;
+}
+
+.add_payment_cred {
+    padding-top: 68px;
+    padding-left:  40%;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.add_payment_cred.form {
+    padding-left: 38%;
+}
+
+
+
+.transaction_related_btn {
+    margin-right: 6px;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox {
+    width:71px;
+    height:28px;
+    overflow-x: hidden;
+    margin-right: 5px;
+}
+
+.custom-checkbox .lbl-text {
+    height:27px;
+    padding-top: 5px;
+    
+    margin-left: 9px;
+    margin-right: 9px;
+    color: white;
+}
+
+.custom-checkbox .toggle {
+ width:24px;
+ height: 24px;
+ margin-top: 2px;
+ margin-left: 4px;
+ margin-right: 3px;
+ overflow-x: hidden;
+}
+
+.custom-checkbox .decoration {
+    height:28px;
+padding-top: 0px;  
+    overflow-x: hidden;
+}
+
+.custom-checkbox .decoration.actived {
+    background-color:#e7304d;
+    margin-left:0px;
+}
+.custom-checkbox .decoration.disabled {
+    background-color:#ccc;
+    margin-left:-37px;
+}
+
+
+
+.circular-checkbox {
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+
+.messaging-display-form  .users-list {
+    overflow-y: scroll;
+    height: 451px;
+}
+
+
+
+.popup-camp-header {
+    height:54px;
+}
+
+.popup-camp-body {
+    overflow-y: scroll;
+}
+
+.popup-camp-body .static-part {
+    min-height: 450px;
+    border: 1px solid black;
+}
+
+.popup-camp-body .dynamic-part {
+    min-height: 255px;
+    border:1px solid black;
+}
+
+.popup-camp-footer {
+    height:43px;
+}
+
+

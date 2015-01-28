@@ -57,7 +57,7 @@
 						<img src="../img/credit.png" class="inline img-credit">
 						<div class="inline text-color--white">100</div>
 						<img src="../img/individual/Lego-logo.jpeg" class="circle user-avatar--header">
-						<a href="#" class="btn__header__item"><i class="fa fa-bars v-middle text-color--white"></i></a>
+						<a href="#tab1" class="btn__header__item"><i class="fa fa-bars v-middle text-color--white"></i></a>
 					</div>
 				</div>
 			</div>
@@ -96,7 +96,7 @@
 			</div>
 			
 		</div>
-		
+
 		<div class="abs bottom margin-center text-center profile__cover-userInfo">
 			<div class="profile__cover-copy">
 				<span class="bold h5">Little Elephant</span>
@@ -107,7 +107,13 @@
 				</ul>
 			</div>
 		</div>
-		
+		<div class="profile__cover-interact rel float-right text-color--black h6">
+            
+            <a href="#"><div class="col icon circle bg-color--white center"><span class="fa fa-paper-plane "></span></div></a>
+            <a href="#"><div class="col icon circle bg-color--white center"><span class="fa fa-plus-square "></span></div></a>
+            <a href="#"><div class="col icon circle bg-color--white center"><span class="fa fa-ellipsis-v "></span></div></a>
+            
+        </div>
 	</section>
 	
 	
@@ -115,13 +121,16 @@
 	
 	<!--Individu Navigation-->
 	<section class="wrap text-center">
-		<ul class="bg-color--white no-style no-margin no-padding">
-			<li class="inline"><a href="#" class="user-nav__item bold">Social Feed</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Profile</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Campaigns</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Hashtags</a></li>
-			<li class="inline"><a href="#" class="user-nav__item bold">Notifications</a></li>
-			<li class="inline"><a href="#"><i class="fa fa-gear user-nav__fa-gear-active user-nav__item--active"></i></a></li>
+		<ul class="bg-color--white no-style no-margin no-padding tabs-menu">
+			<!-- <li class="inline"><a href="#tabs-1" class="user-nav__item bold">Social Feed</a></li> -->
+			<li class="inline current"><a href="#tabs-2" class="user-nav__item bold">Profile</a></li>
+			<li class="inline"><a href="#tabs-3" class="user-nav__item bold">Campaigns</a></li>
+<!--			@if ($isUserProfile)-->
+			<!-- <li class="inline"><a href="#tabs-4" class="user-nav__item bold">Hashtags</a></li> -->
+			<li class="inline"><a href="#tabs-5" class="user-nav__item bold">Notifications</a></li>
+			<li class="inline"><a href="#tabs-6" class="user-nav__item bold">Profile Settings</a></li>
+			<li class="inline"><a href="#tabs-7"><i class="fa fa-gear user-nav__fa-gear"></i></a></li> 
+<!--			@endif-->
 		</ul>
 	</section>
 <?php
