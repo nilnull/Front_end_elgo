@@ -237,8 +237,10 @@
 					<div class="col col2">
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row">
-								<img src="../img/brands/create/share.png" class="float-left createcampaign__card-img">
-								<p class="bold no-margin">Posts</p>
+								<div class="pointer js-campaignlink" data-campaigntype="Posts">
+									<img src="../img/brands/create/share.png" class="float-left createcampaign__card-img">
+									<p class="bold no-margin">Posts</p>
+								</div>
 								<p class="h7">Users share a pre-created post, along with image.</p>
 								<p class="h7">Platforms: 
 									<i class="fa fa-facebook social-circle"></i>
@@ -253,8 +255,10 @@
 					<div class="col col2">
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row">
-								<img src="../img/brands/create/hashtag.png" class="float-left createcampaign__card-img">
-								<p class="bold no-margin">Hashtags</p>
+								<div class="pointer js-campaignlink" data-campaigntype="Hashtags">
+									<img src="../img/brands/create/hashtag.png" class="float-left createcampaign__card-img">
+									<p class="bold no-margin">Hashtags</p>
+								</div>
 								<p class="h7">Users incorporate your hashtags in their posts.</p>
 								<p class="h7">Platforms: 
 									<i class="fa fa-twitter social-circle"></i>
@@ -288,9 +292,10 @@
 					<div class="col col2">
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row">
-								
-								<img src="../img/brands/create/survey.png" class="float-left createcampaign__card-img">
-								<p class="bold no-margin">Clicks</p>
+								<div class="pointer js-campaignlink" data-campaigntype="Survey">
+									<img src="../img/brands/create/survey.png" class="float-left createcampaign__card-img">
+									<p class="bold no-margin">Survey</p>
+								</div>
 								<p class="h7">Users take a survey, and data is gathered.</p>
 							</div>
 						</div>
@@ -301,9 +306,10 @@
 					<div class="col col2">
 						<div class="card card-bgColor--white">
 							<div class="rel card-container--s row /createcampaign__card--inactive">
-								
-								<img src="../img/brands/create/check-in.png" class="float-left createcampaign__card-img">
-								<p class="bold no-margin">Check-in</p>
+								<div class="pointer js-campaignlink" data-campaigntype="Check-in">
+									<img src="../img/brands/create/check-in.png" class="float-left createcampaign__card-img">
+									<p class="bold no-margin">Check-in</p>
+								</div>
 								<p class="h7">Users mark or 'check-in' their locations based on your link.</p>
 								
 								<div class="hide abs top left createcampaign__card-soon text-center" style="background-color:#7242c3">
@@ -391,8 +397,7 @@
 						<a href="#" class="abs bold" style="top:5px;right:5px">x</a>
 						<div class="row">
 							<div class="col col10"><i class="fa fa-facebook"></i></div>
-							<div class="col col90 ellipsis">
-								https://www.facebook.com/LEGO/photos/a.10150175674793403.303596.6665038402/10152491945198403/
+							<div class="col col90 ellipsis">	https://www.facebook.com/LEGO/photos/a.10150175674793403.303596.6665038402/10152491945198403/
 							</div>
 						</div>
 						<div class="row">
@@ -564,11 +569,12 @@
 			});
 			
 			$('.js-campaignlink').click(function(){
-				var type = $('.js-campaignlink').data('campaigntype');
-				$('.js-menu__item a').addClass('createcampaign-left-menu__item-link--active').parents().siblings().children('a').removeClass('createcampaign-left-menu__item-link--active');
-				$(this).find('.js-campaigntext').text('(Posts)');
+				var type = $(this).data('campaigntype');
+				$('.js-step[data-step="step2"]').show().siblings('.js-step').hide();
+				$('.js-menu__item a[data-href="step2"]').addClass('createcampaign-left-menu__item-link--active').parents().siblings().children('a').removeClass('createcampaign-left-menu__item-link--active');
+				$('.js-campaigntext').text('('+type+')');
 				return false;
-			})
+			});
 		});
 		
 		
