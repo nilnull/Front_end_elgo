@@ -523,7 +523,7 @@ html[xmlns] .clearfix{display: block}
 	color:#343434;
 	background-color:#f2f2f2;
 }
-.card-container{margin-top:6px; padding-left: 30px; padding-bottom: 27px; padding-top: 27px; padding-right: 30px;}
+.card-container{margin-top:6px; padding-left: 30px; padding-bottom: 27px; padding-top: 27px;}
 .card-container--s{padding:10px;}
 .card-bgColor--white{background-color:#fff;}
 .card-bgColor--blue{background-color:#1792e9;}
@@ -1216,6 +1216,7 @@ html[xmlns] .clearfix{display: block}
 	color:#414141;
 	background-color:transparent;
 }
+
 .createCampain__form-select{
 	float:left;
 	padding: 9px 20px 8px;
@@ -1262,12 +1263,15 @@ html[xmlns] .clearfix{display: block}
 }
 
 
-
+<<<<<<< HEAD
 .createcampaign-top-menu, .top-submenu{
 	padding:10px 15px;
 	margin-left:5px;
 	margin-right:5px;
+=======
+.createCampaign-top-menu, .top-submenu{
 	padding:15px 18px 15px 18px;
+>>>>>>> origin/master
 	color:#000;	
 }
 
@@ -1284,7 +1288,15 @@ html[xmlns] .clearfix{display: block}
 
 
 
+<<<<<<< HEAD
+.createcampaign-top-menu:hover, .top-submenu:hover,
+.createcampaign-top-menu--active, .top-submenu--active{
+	background-color:#fff;
+}
 
+.createcampaign__card-img{margin-right:15px;}
+.createcampaign__card-link{
+=======
 .createCampaign-top-menu:hover, .top-submenu:hover,
 .createCampaign-top-menu--active,.createCampaign-top-menu.active, .top-submenu--active,.top-submenu.active{
 	background-color:#fff;
@@ -1294,6 +1306,7 @@ html[xmlns] .clearfix{display: block}
 
 .createCampaign__card-img{margin-right:15px;}
 .createCampaign__card-link{
+>>>>>>> origin/master
 	right: 10px;
 	bottom: 13px;
 }
@@ -1323,11 +1336,14 @@ html[xmlns] .clearfix{display: block}
 	margin-right: 30px;
 	margin-bottom: 15px;
 }
-
+<<<<<<< HEAD
+.createcampaign-left-menu__item-desc,
+.createcampaign-left-menu__item-link{
+=======
 .createCampaign-left-menu__item-desc,
 .createCampaign-left-menu__item-link,
 .side-left-menu__item-link{
-
+>>>>>>> origin/master
 	display:block;
 	padding-top:18px;
 	padding-bottom:18px;
@@ -1343,12 +1359,16 @@ html[xmlns] .clearfix{display: block}
 	padding-top:8px;
 	min-height:60px;
 }
-
+<<<<<<< HEAD
+a.createcampaign-left-menu__item-link:hover,
+.createcampaign-left-menu__item-link--active{
+=======
 a.createCampaign-left-menu__item-link:hover,
 .createCampaign-left-menu__item-link--active,
 .side-left-menu__item-link.active,
 a.side-left-menu__item-link:hover
 {
+>>>>>>> origin/master
 	color:#fff;
 	background-color:#f93349;
 }
@@ -2401,7 +2421,7 @@ margin-top:15%;
 }
 
 .space-inner-outer{
-    padding:27px;
+    padding:5px;
     margin: 5px;
 }
 .space-outer {
