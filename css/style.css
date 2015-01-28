@@ -1432,6 +1432,19 @@ a.side-left-menu__item-link:hover
 }
 .createcampaign-card-input--full{width:700px;}
 
+.createcampaign-survey-group{
+	padding-top:10px;
+	border-top:1px solid #ccc;
+}
+.createcampaign-survey-group__no{
+	display: inline-block;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+	background-color:#3f4e54;
+}
 
 
 .group-circle{

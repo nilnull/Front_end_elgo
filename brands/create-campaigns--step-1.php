@@ -375,35 +375,206 @@
 						</div>
 					</div>
 					
-					<div class="createcampaign-title">Posts</div>
-					<div class="row createcampaign-card">
-						<div class="row createcampaign-card-formgroup">
-							<div class="col col2">
-								<label class="createcampaign-card-label">Platform</label>
-								<select class="col col40 createcampaign-card-select">
-									<option>Choose Platform</option>
-								</select>
+					<div class="hide js-step2form" data-form="Posts">
+						<div class="createcampaign-title">Posts</div>
+						<div class="row createcampaign-card">
+							<div class="row createcampaign-card-formgroup">
+								<div class="col col2">
+									<label class="createcampaign-card-label">Platform</label>
+									<select class="col col40 createcampaign-card-select">
+										<option>Choose Platform</option>
+									</select>
+								</div>
+								<div class="col col2">
+									<label class="createcampaign-card-label">Embed Post link</label>
+									<input class="createcampaign-card-input" placeholder="Paste the link here">
+								</div>
 							</div>
-							<div class="col col2">
-								<label class="createcampaign-card-label">Embed Post link</label>
-								<input class="createcampaign-card-input" placeholder="Paste the link here">
+							<input class="btn small btn__bg-color--red float-right" type="submit" value="ADD">
+						</div>
+						
+						<div class="rel row createcampaign-card" style="margin-top:5px;">
+							<a href="#" class="abs bold" style="top:5px;right:5px">x</a>
+							<div class="row">
+								<div class="col col10"><i class="fa fa-facebook social-circle"></i></div>
+								<div class="col col90 ellipsis">	https://www.facebook.com/LEGO/photos/a.10150175674793403.303596.6665038402/10152491945198403/
+								</div>
+							</div>
+							<div class="row">
+								<img src="" class="">
 							</div>
 						</div>
-						<input class="btn small btn__bg-color--red float-right" type="submit" value="ADD">
 					</div>
 					
-					
-					<div class="rel row createcampaign-card" style="margin-top:5px;">
-						<a href="#" class="abs bold" style="top:5px;right:5px">x</a>
-						<div class="row">
-							<div class="col col10"><i class="fa fa-facebook"></i></div>
-							<div class="col col90 ellipsis">	https://www.facebook.com/LEGO/photos/a.10150175674793403.303596.6665038402/10152491945198403/
+					<div class="hide js-step2form" data-form="Hashtags">
+						<div class="createcampaign-title">Hashtags</div>
+						<div class="row createcampaign-card">
+							<div class="row createcampaign-card-formgroup">
+								<div class="col col2">
+									<label class="createcampaign-card-label">Platform</label>
+									<select class="col col40 createcampaign-card-select">
+										<option>Instagram</option>
+									</select>
+								</div>
+								<div class="col col2">
+									<label class="createcampaign-card-label">Hashtag <i class="fa fa-info-circle"></i></label>
+									<input class="createcampaign-card-input">
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<img src="" class="">
+							<input class="btn small btn__bg-color--red float-right" type="submit" value="ADD">
 						</div>
 					</div>
+					
+					<div class="hide js-step2form" data-form="Clicks">
+						<div class="createcampaign-title">Clicks</div>
+						<div class="row createcampaign-card">
+							<div class="row createcampaign-card-formgroup">
+								<div class="col col2">
+									<label class="createcampaign-card-label">Type</label>
+									<select class="col col40 createcampaign-card-select">
+										<option>Banner</option>
+									</select>
+								</div>
+								<div class="col col2">
+									<label class="createcampaign-card-label">Upload <i class="fa fa-info-circle"></i></label>
+									<input class="createcampaign-card-input" type="file">
+								</div>
+							</div>
+							<div class="row createcampaign-card-formgroup">
+								<div class="col col2">
+									<label class="createcampaign-card-label">BannerLink</label>
+									<input class="createcampaign-card-input" placeholder="Paste the link here" style="width: 270px;">
+								</div>
+								<div class="col col2">
+									<label class="createcampaign-card-label bold">Pay Per View</label>
+									<input class="createcampaign-card-input">
+								</div>
+							</div>
+							<input class="btn small btn__bg-color--red float-right" type="submit" value="ADD">
+						</div>
+					</div>
+					
+					<div class="hide js-step2form" data-form="Survey">
+						<div class="createcampaign-title">Survey</div>
+						<div class="row createcampaign-card">
+						
+							<div class="createcampaign-card-formgroup">
+								<label class="createcampaign-card-label">Prefilled Data</label>
+								<span style="margin-right:10px"><input type="checkbox"> Name</span>
+								<span style="margin-right:10px"><input type="checkbox"> Gender</span>
+								<span style="margin-right:10px"><input type="checkbox"> Age</span>
+								<span style="margin-right:10px"><input type="checkbox"> Languages</span>
+								<span style="margin-right:10px"><input type="checkbox"> Naionality</span>
+								<span style="margin-right:10px"><input type="checkbox"> Location</span>
+								<span style="margin-right:10px"><input type="checkbox"> Contact</span>
+								<span style="margin-right:10px"><input type="checkbox"> Email</span>
+								<span style="margin-right:10px"><input type="checkbox"> Blog</span>
+							</div>
+							<div class="row createcampaign-card-formgroup" style="margin:30px 0">
+								<div class="col col2">&nbsp;</div>
+								<div class="col col2">
+									<label class="createcampaign-card-label bold">Pay Per Survey</label>
+									<input class="createcampaign-card-input">
+								</div>
+							</div>
+							
+							<div class="createcampaign-survey-group">
+								<span class="createcampaign-survey-group__no bold">1</span>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Question Title</label>
+									<input class="createcampaign-card-input--full">
+								</div>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Help Text</label>
+									<input class="createcampaign-card-input--full">
+								</div>
+								<div class="row createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Type <i class="fa fa-info-circle"></i></label>
+									<select class="createcampaign-card-input">
+										<option>Paragraph</option>
+									</select>
+								</div>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Required</label>
+									<input type="radio"> Yes
+									<input type="radio"> No
+								</div>
+							</div>
+							
+							<div class="createcampaign-survey-group">
+								<span class="createcampaign-survey-group__no bold">2</span>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Question Title</label>
+									<input class="createcampaign-card-input--full">
+								</div>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Help Text</label>
+									<input class="createcampaign-card-input--full">
+								</div>
+								<div class="row createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Type <i class="fa fa-info-circle"></i></label>
+									<select class="createcampaign-card-input">
+										<option>Paragraph</option>
+									</select>
+								</div>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Required</label>
+									<input type="radio"> Yes
+									<input type="radio"> No
+								</div>
+							</div>
+							
+							<div class="createcampaign-survey-group">
+								<span class="createcampaign-survey-group__no bold">3</span>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Question Title</label>
+									<input class="createcampaign-card-input--full">
+								</div>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Help Text</label>
+									<input class="createcampaign-card-input--full">
+								</div>
+								<div class="row createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Type <i class="fa fa-info-circle"></i></label>
+									<select class="createcampaign-card-input">
+										<option>Paragraph</option>
+									</select>
+								</div>
+								<div class="createcampaign-card-formgroup">
+									<label class="createcampaign-card-label">Required</label>
+									<input type="radio"> Yes
+									<input type="radio"> No
+								</div>
+							</div>
+							
+							<input class="btn small btn__bg-color--red float-right" type="submit" value="ADD">
+						</div>
+					</div>
+					
+					<div class="hide js-step2form" data-form="Check-in">
+						<div class="createcampaign-title">Check-in</div>
+						<div class="row createcampaign-card">
+							<div class="row createcampaign-card-formgroup">
+								<div class="col col2">
+									<label class="createcampaign-card-label">Platform</label>
+									<span class="bold">Foursquare (Swarm)</span>
+								</div>
+								<div class="col col2">
+									<label class="createcampaign-card-label">Embed link <i class="fa fa-info-circle"></i></label>
+									<input class="createcampaign-card-input" placeholder="Paste the link here">
+								</div>
+							</div>
+							<div class="row createcampaign-card-formgroup">
+								<div class="col col2">&nbsp;</div>
+								<div class="col col2">
+									<label class="createcampaign-card-label bold">Pay Per Check-in</label>
+									<input class="createcampaign-card-input">
+								</div>
+							</div>
+							<input class="btn small btn__bg-color--red float-right" type="submit" value="ADD">
+						</div>
+					</div>
+					
 					
 				</div>
 				
@@ -572,6 +743,7 @@
 				var type = $(this).data('campaigntype');
 				$('.js-step[data-step="step2"]').show().siblings('.js-step').hide();
 				$('.js-menu__item a[data-href="step2"]').addClass('createcampaign-left-menu__item-link--active').parents().siblings().children('a').removeClass('createcampaign-left-menu__item-link--active');
+				$('.js-step2form[data-form="'+type+'"]').show().siblings('.js-step2form').hide();
 				$('.js-campaigntext').text('('+type+')');
 				return false;
 			});
