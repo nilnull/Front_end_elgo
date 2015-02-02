@@ -366,11 +366,11 @@
 						<div class="row createcampaign-card-formgroup">
 							<div class="col col2">
 								<label class="createcampaign-card-label">Coverphoto<br>(750w x 195h)</label>
-								<input type="file">
+								<input type="button" id='campaign_cover' class="bg-color--grey--lightest custome_file_input" value="Click to upload/ Drag the file here">
 							</div>
 							<div class="col col2">
 								<label class="createcampaign-card-label">Thumbnail<br>(560w x 195h)</label>
-								<input type="file">
+								<input type="button" id='campaign_thumbnail' class="bg-color--grey--lightest custome_file_input" value="Click to upload/ Drag the file here">
 							</div>
 						</div>
 					</div>
@@ -712,7 +712,15 @@
 		
 	</section>
 	
-	
+	<form id="uploadimage" action="" method="post" enctype="multipart/form-data" >
+        <div id="image_preview"><img id="previewing" src="noimage.png" /></div>
+        <hr id="line">
+        <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file" id="file" class="image_upload_form_btn" />
+        <input type="submit" value="Upload" class="submit " />
+        </div>
+    </form>
 	
 	
 	<!--Footer-->

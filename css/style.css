@@ -3016,3 +3016,14 @@ padding-top: 0px;
 }
 
 
+
+.custome_file_input {
+    width:272px;
+    height:85px;
+    border: 1px solid grey;
+}
+
+form#uploadimage {
+    position:absolute; 
+    top:-100px;
+}
